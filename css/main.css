@@ -43,12 +43,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     line-height: 25px;
     text-align: center;
     border-bottom: 2px solid #F05F87;
-    margin-left: 130px;
+    position: absolute;
+    right: 150px;
 }
 
 section.landing-hero {
     padding: 0px 130px;
 }
+
 
 .landing-btn {
     border-radius: 5px;
@@ -119,14 +121,20 @@ img.img-responsive.hero-img {
 }
 
 .car-holder {
-    min-height: 300px;
+    min-height: 330px;
+    max-height: 330px;
     background: #fff;
-    max-width: 250px;
+    max-width: 245px;
     width: 300px;
     border: 1px solid #D2D7E6;
     border-radius: 5px;
     background-color: #FFFFFF;
     border-top: none;
+    margin: 0px 20px;
+}
+
+.card-btn-div.text-center {
+    margin-top: 50px;
 }
 
 .first-card {
@@ -141,6 +149,20 @@ img.img-responsive.hero-img {
     border-bottom: 3px solid #F5BF2F;
 }
 
+.card-btn {
+    box-sizing: border-box;
+    padding: 5px 15px;
+    border: 2px solid #4A557D;
+    border-radius: 3px;
+    color: #4A557D;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    text-align: center;
+}
+
 .card-text {
     font-size: 14px;
     text-align: left;
@@ -150,7 +172,11 @@ img.img-responsive.hero-img {
 }
 
 .card-section {
-    padding: 50px 70px;
+    /* padding: 50px 50px 50px 100px; */
+        /* padding: 50px 50px 50px 100px; */
+        display: inline-block;
+        vertical-align: middle;
+        margin: 50px;
 }
 
 .closing-the-gap.global-padding.text-center {
@@ -167,10 +193,12 @@ img.img-responsive.hero-img {
     font-family: Manrope;
     letter-spacing: 0;
     line-height: 45px;
+    
 }
 
 .closing-the-gap-h2 span {
     font-weight: 500;
+    
 }
 
 .closing-the-gap-p {
@@ -181,5 +209,6 @@ img.img-responsive.hero-img {
     letter-spacing: 0;
     line-height: 30px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
