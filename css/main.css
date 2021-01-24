@@ -13,8 +13,20 @@ html, body {
     padding: 0px;
 }
 
+.default-btn {
+    border-radius: 5px;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    height: 42px;
+    width: 140px;
+}
+
 .global-padding {
-    padding: 80px 130px;
+    padding: 70px 130px;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light.bg-light {
@@ -49,29 +61,22 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 section.landing-hero {
     padding: 0px 130px;
+    height: 500px;
 }
 
 
 .landing-btn {
-    border-radius: 5px;
     background-color: #4A557D;
     color: #FFFFFF;
-    font-family: Manrope;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 20px;
-    text-align: center;
-    padding: 10px 25px;
 }
 
 p.landing-p-1 {
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 100;
     letter-spacing: 0;
     margin: 20px 0px;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .landing-h1 span {
@@ -115,7 +120,7 @@ img.img-responsive.hero-img {
 }
 
 .landing-p-2 {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 30px;
 }
@@ -151,7 +156,8 @@ img.img-responsive.hero-img {
 
 .card-btn {
     box-sizing: border-box;
-    padding: 5px 15px;
+    height: 42px;
+    width: 140px;
     border: 2px solid #4A557D;
     border-radius: 3px;
     color: #4A557D;
@@ -164,7 +170,7 @@ img.img-responsive.hero-img {
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 13px;
     text-align: left;
     padding: 25px;
     line-height: 25px;
@@ -181,8 +187,6 @@ img.img-responsive.hero-img {
 
 .closing-the-gap.global-padding.text-center {
     background: #F4F6FF;
-    position: relative;
-    top: -140px;
 }
 
 .closing-the-gap-h2 {
@@ -212,3 +216,124 @@ img.img-responsive.hero-img {
     margin-bottom: 0px;
 }
 
+
+.what-we-do{
+    background-image: url('./../assets/img/dark-bg-pattern-full-block.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.what-we-do .closing-the-gap-h2, .what-we-do .closing-the-gap-p {
+    color: #ffffff;
+}
+
+
+.health-info {
+    background: #fff;
+    padding: 30px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 50px 40px 30px 40px;
+    height: 230px;
+    /* width: 780px; */
+}
+
+.health-info-btn {
+    box-sizing: border-box;
+    border: 2px solid #81C677;
+    background-color: #81C677;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.health-info-text {
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+h4.health-info-header {
+    font-size: 22px;
+    font-family: Manrope;
+    letter-spacing: 0;
+    line-height: 35px;
+}
+
+.health-info-row {
+    margin-top: 20px;
+}
+
+.health-info-img {
+    float: right;
+    position: relative;
+    top: -10px;
+}
+
+.inner-overlay {
+    border-radius: 5px;
+    background-color: #00000040;
+    color: #fff;
+}
+
+.health-info-below {
+    margin: 0px 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inner-overlay {
+    border-radius: 5px;
+    background-color: #00000040;
+    color: #fff;
+    padding: 25px;
+    text-align: left;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.first-overlay {
+    margin-right: 15px;
+}
+
+.second-overlay {
+    margin-left: 15px;
+}
+
+.inner-overlay-p {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: left;
+    margin: 16px 0px;
+    height: 125px;
+}
+
+.inner-overlay-header {
+    font-size: 20px;
+    font-family: Manrope;
+    letter-spacing: 0;
+    line-height: 35px;
+}
+
+.inner-overlay-btn.default-btn {
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.first-overlay-btn {
+    border: 2px solid #F5BF2F;
+}
+
+.second-overlay-btn {
+    border: 2px solid #F05F87;
+}
