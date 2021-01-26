@@ -460,3 +460,37 @@ h4.health-info-header {
 .stay-in-the-know-row {
     margin-top: 71px;
 }
+
+
+@media (max-width: 768px) {
+    .hero-img {
+        display: none;
+    }
+
+    .global-padding {
+        padding: 40px 30px;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+        padding: 0px 29px;
+    }
+
+    .landing-hero-div1 {
+        padding: 0px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 450px;
+    }
+
+    h1.landing-h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
