@@ -573,6 +573,11 @@ h4.health-info-header {
     html, body {
         overflow-x: hidden !important;
     }
+    
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
 
     .hide-br-sm{
         display: none;
@@ -717,5 +722,26 @@ h4.health-info-header {
         font-size: 14px;
         line-height: 25px;
         font-weight: 200;
+    }
+
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    h4.health-info-header {
+        font-size: 16px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 300px;
+    }
+
+    .closing-the-gap-p {
+        text-align: justify;
     }
 }
