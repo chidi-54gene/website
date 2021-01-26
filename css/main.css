@@ -702,6 +702,39 @@ h4.health-info-header {
         padding: 0px;
     }
 
+    .contact-us-inner {
+        margin: 0px;
+    }
+
+    .contact-us {
+        height: 300px;
+    }
+
+    h3.contact-us-header {
+        color: #FFFFFF;
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 35px;
+    }
+
+    footer .col-xs-12.col-sm-12.col-md-4.col-lg-4 {
+        margin: 20px 0px;
+    }
+
+    footer.footer.global-padding {
+        background-color: #252939;
+        padding-bottom: 30px;
+    }
+
+    .logo-icon {
+        margin-bottom: 20px;
+    }
+
+    img.img.img-responsive.sm-icon {
+        width: 15px;
+    }
 
     .hide-br-sm{
         display: none;
