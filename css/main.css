@@ -696,4 +696,14 @@ h4.health-info-header {
         padding: 30px;
         height: 400px;
     }
+
+    .closing-the-gap-h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .closing-the-gap-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
 }
