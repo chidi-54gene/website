@@ -1064,7 +1064,7 @@ h4.health-info-header {
         border-radius: 5px;
         padding: 20px;
         margin: 10px 0px;
-        width: 300px;
+        width: 315px;
     }
 
     .stay-in-the-know-img {
@@ -1077,6 +1077,14 @@ h4.health-info-header {
         height: 350px;
         width: 300px;
         margin: 0px;
+    }
+
+    .car-holder {
+        max-width: 315px;
+        width: 315px;
+        margin-top: 30px;
+        height: 370px;
+        min-height: 370px;
     }
     
 }
