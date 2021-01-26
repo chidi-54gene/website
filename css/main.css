@@ -706,4 +706,16 @@ h4.health-info-header {
         font-size: 14px;
         line-height: 25px;
     }
+
+    .car-holder {
+        margin: 0px;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 200;
+    }
 }
