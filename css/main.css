@@ -744,4 +744,31 @@ h4.health-info-header {
     .closing-the-gap-p {
         text-align: justify;
     }
+
+    .card-btn-div.text-center {
+        margin-top: 20px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .inner-overlay-p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 16px 0px;
+        height: 125px;
+    }
 }
