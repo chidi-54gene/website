@@ -253,7 +253,7 @@ img.img-responsive.hero-img {
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 500px;
 }
 
 .contact-us-btn-2 {
@@ -276,7 +276,52 @@ img.img-responsive.hero-img {
 }
 
 .contact-us-inner {
-    margin: 40px 0px;
+    margin: 80px 40px;
+}
+
+footer.footer.global-padding {
+    background-color: #252939;
+    padding-bottom: 120px;
+}
+
+.logo-icon {
+    margin-bottom: 80px;
+}
+
+h5.footer-ul-header {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+li.footer-li a {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+li.footer-li {
+    list-style-type: none;
+}
+
+ul.footer-ul {
+    padding: 0px;
+    line-height: 35px;
+}
+
+.footer-copy {
+    color: #8188A1;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
 }
 
 .what-we-do .closing-the-gap-h2, .what-we-do .closing-the-gap-p {

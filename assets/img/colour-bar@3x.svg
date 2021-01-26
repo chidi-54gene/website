@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="4px" viewBox="0 0 1600 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7C197E8F-7B87-40A6-8CC8-4F9106A213C3@3x</title>
+    <g id="primary" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage-amended" transform="translate(0.000000, -5040.000000)">
+            <g id="colour-bar" transform="translate(0.000000, 5040.000000)">
+                <rect id="Rectangle" fill="#4A557D" x="0" y="0" width="400" height="4"></rect>
+                <rect id="Rectangle" fill="#81C677" x="400" y="0" width="400" height="4"></rect>
+                <rect id="Rectangle" fill="#F05F87" x="800" y="0" width="400" height="4"></rect>
+                <rect id="Rectangle" fill="#F5BF2F" x="1200" y="0" width="400" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
