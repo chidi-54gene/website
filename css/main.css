@@ -958,6 +958,129 @@ h4.health-info-header {
     
 }
 
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+    h1.landing-h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.landing-p-1 {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .landing-p-2 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .closing-the-gap-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .car-holder {
+        margin: 0px;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 200;
+    }
+
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.health-info-header {
+        font-size: 16px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 300px;
+    }
+
+    .closing-the-gap-p {
+        text-align: justify;
+    }
+
+    .card-btn-div.text-center {
+        margin-top: 20px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .inner-overlay-p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 16px 0px;
+        height: 125px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 300px;
+    }
+
+    .stay-in-the-know-img {
+        width: 250px;
+        display: none;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 300px;
+        margin: 0px;
+    }
+    
+}
+
 
 @media only screen and (min-width: 1281px) and (max-width: 1440px) {
     .hero-img {
