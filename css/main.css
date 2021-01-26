@@ -479,6 +479,21 @@ h4.health-info-header {
         padding: 0px 29px;
     }
 
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
     .landing-hero-div1 {
         padding: 0px;
     }
@@ -572,6 +587,11 @@ h4.health-info-header {
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden !important;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border: none;
     }
     
     .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
