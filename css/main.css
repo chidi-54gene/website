@@ -693,6 +693,39 @@ h4.health-info-header {
         overflow-x: hidden !important;
     }
 
+    #hide-mobile{
+        display: none;
+    }
+
+    .navbar-collapse {
+        background: #3f4c78;
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    
+        opacity: inherit;
+
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px 30px;
+        margin-bottom: 0;
+        list-style: none;
+        height: 100vh;
+    }
+
+    .nav-link {
+        color: #fff !important;
+        padding: 10px 0 !important;
+        margin: 15px 0px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
     .navbar-light .navbar-toggler {
         color: rgba(0,0,0,.5);
         border: none;
