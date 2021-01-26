@@ -493,4 +493,56 @@ h4.health-info-header {
         font-size: 22px;
         line-height: 40px;
     }
+
+    .card-section {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 30px 0px;
+    }
+
+    .car-holder {
+        max-width: 300px;
+        width: 300px;
+        margin-top: 30px;
+        height: 370px;
+        min-height: 370px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 200;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 270px;
+    }
+
+    .health-info-text {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 0;
+        line-height: 25px;
+        margin-bottom: 0px;
+    }
+
+    .health-info-img {
+        float: right;
+        position: relative;
+        top: 0px;
+        width: 50px;
+    }
+
+    h4.health-info-header {
+        font-size: 18px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info-btn {
+        margin-top: 0px;
+    }
 }
