@@ -291,23 +291,32 @@ footer.footer.global-padding {
 h5.footer-ul-header {
     color: #FFFFFF;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 26px;
 }
 
 li.footer-li a {
-    color: #FFFFFF;
+    color: #fff;
     font-family: Manrope;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 0;
     line-height: 26px;
 }
 
+li.footer-li a:hover {
+  text-decoration: none;
+}
+
 li.footer-li {
     list-style-type: none;
+}
+
+.flag {
+    width: 15px;
+    margin-right: 5px;
 }
 
 ul.footer-ul {
