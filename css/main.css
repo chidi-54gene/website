@@ -17,6 +17,22 @@ html, body {
     display: none;
 }
 
+#sidebar-close {
+    display: none;
+}
+
+#sidebar {
+    background: #3f4c78;
+    height: 100vh;
+    text-align: center;
+    font-size: 17px;
+    position: absolute;
+    margin-left: 2000px;
+    width: 100%;
+    opacity: 1;
+    z-index: 10;
+}
+
 .default-btn {
     border-radius: 5px;
     font-family: Manrope;
@@ -33,7 +49,7 @@ html, body {
     padding: 70px 130px;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+nav.navbar.navbar-expand-lg{
     box-sizing: border-box;
     height: 82px;
     border: 1px solid #F4F6FF;
@@ -579,7 +595,7 @@ h4.health-info-header {
         padding: 40px 30px;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    nav.navbar.navbar-expand-lg {
         padding: 0px 29px;
     }
 
@@ -698,10 +714,10 @@ h4.health-info-header {
     }
 
     .navbar-collapse {
-        background: #3f4c78;
+        background: #20263e;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    nav.navbar.navbar-expand-lg{
     
         opacity: inherit;
 
@@ -791,7 +807,7 @@ h4.health-info-header {
         padding: 40px 30px;
     }
 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    nav.navbar.navbar-expand-lg {
         padding: 0px 30px;
         height: 70px;
     }
