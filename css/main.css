@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400;500;600;700;800&display=swap');
 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 html, body {
@@ -12,6 +12,26 @@ html, body {
     margin: 0px;
     padding: 0px;
 }
+
+#health-info-mobile{
+    display: none;
+}
+/* 
+#sidebar-close {
+    display: none;
+}
+
+#sidebar {
+    background: #3f4c78;
+    height: 100vh;
+    text-align: center;
+    font-size: 17px;
+    position: absolute;
+    margin-left: 2000px;
+    width: 100%;
+    opacity: 1;
+    z-index: 10;
+} */
 
 .default-btn {
     border-radius: 5px;
@@ -29,7 +49,7 @@ html, body {
     padding: 70px 130px;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+nav.navbar.navbar-expand-lg{
     box-sizing: border-box;
     height: 82px;
     border: 1px solid #F4F6FF;
@@ -37,7 +57,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     background-color: #FFFFFF !important;
     box-shadow: 0 0 8px 0 rgba(26,29,39,0.14);
     padding: 0px 130px;
-    z-index: 500;
+    z-index: 50;
 }
 
 .contact-us-btn {
@@ -62,6 +82,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 section.landing-hero {
     padding: 0px 130px;
     height: 550px;
+    margin-top: 5%;
 }
 
 
@@ -105,6 +126,25 @@ h1.landing-h1 {
 .logo {
     width: 120px;
     margin-right: 25px;
+}
+
+h3.contact-us-header {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 44px;
+}
+
+p.contact-us-p {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin: 15px 0px 30px 0px;
 }
 
 .landing-hero-div1 {
@@ -223,6 +263,91 @@ img.img-responsive.hero-img {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+}
+
+.contact-us{
+    background-image: url('./../assets/img/Contact-us-section.png');
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.contact-us-btn-2 {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.16);
+    border-radius: 5px;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    height: 42px;
+    width: 140px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 3px solid #F5BF2F;
+}
+
+.contact-us-inner {
+    margin: 80px 40px;
+}
+
+footer.footer.global-padding {
+    background-color: #252939;
+    padding-bottom: 120px;
+}
+
+.logo-icon {
+    margin-bottom: 80px;
+}
+
+h5.footer-ul-header {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+li.footer-li a {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+li.footer-li a:hover {
+  text-decoration: none;
+}
+
+li.footer-li {
+    list-style-type: none;
+}
+
+.flag {
+    width: 15px;
+    margin-right: 5px;
+}
+
+ul.footer-ul {
+    padding: 0px;
+    line-height: 35px;
+}
+
+.footer-copy {
+    color: #8188A1;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
 }
 
 .what-we-do .closing-the-gap-h2, .what-we-do .closing-the-gap-p {
@@ -459,4 +584,1011 @@ h4.health-info-header {
 
 .stay-in-the-know-row {
     margin-top: 71px;
+}
+
+
+@media only screen and (min-width: 411px) and (max-width: 768px) {
+    .hero-img {
+        display: none;
+    }
+
+    .global-padding {
+        padding: 40px 30px;
+    }
+
+    nav.navbar.navbar-expand-lg {
+        padding: 0px 29px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .landing-hero-div1 {
+        padding: 0px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 450px;
+    }
+
+    h1.landing-h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .card-section {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 30px 0px;
+    }
+
+    .car-holder {
+        max-width: 300px;
+        width: 300px;
+        margin-top: 30px;
+        height: 370px;
+        min-height: 370px;
+        margin: 0px 25px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 200;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 270px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .health-info-text {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 0;
+        line-height: 25px;
+        margin-bottom: 0px;
+    }
+
+    .health-info-img {
+        float: right;
+        position: relative;
+        top: 0px;
+        width: 50px;
+    }
+
+    h4.health-info-header {
+        font-size: 18px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info-btn {
+        margin-top: 0px;
+    }
+
+    .stay-in-the-know-img {
+        width: 250px;
+    }
+}
+  
+
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+
+    #hide-mobile{
+        display: none;
+    }
+
+    .contact-us-btn {
+        display: none;
+    }
+
+    .navbar-collapse {
+        background: #20263e;
+    }
+
+    nav.navbar.navbar-expand-lg{
+    
+        opacity: inherit;
+
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 10px 30px;
+        margin-bottom: 0;
+        list-style: none;
+        height: 100vh;
+        text-align: left;
+        padding-left: 20%;
+        animation: NavLinkAnimation;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .nav-link {
+        color: #fff !important;
+        padding: 10px 0 !important;
+        margin: 15px 0px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border: none;
+    }
+    
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    .contact-us-inner {
+        margin: 0px;
+    }
+
+    .contact-us {
+        height: 300px;
+    }
+
+    h3.contact-us-header {
+        color: #FFFFFF;
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 35px;
+    }
+
+    footer .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+        margin: 20px 0px;
+    }
+
+    footer.footer.global-padding {
+        background-color: #252939;
+        padding-bottom: 30px;
+    }
+
+    .logo-icon {
+        margin-bottom: 20px;
+    }
+
+    img.img.img-responsive.sm-icon {
+        width: 15px;
+    }
+
+    .hide-br-sm{
+        display: none;
+    }
+    
+    #health-info-web{
+        display: none;
+    }
+    #health-info-mobile{
+        display: block;
+    }
+    .hero-img {
+        display: none;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .global-padding {
+        padding: 40px 30px;
+    }
+
+    nav.navbar.navbar-expand-lg {
+        padding: 0px 30px;
+        height: 70px;
+    }
+
+    .landing-hero-div1 {
+        padding: 0px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 450px;
+        margin-top: 17%;
+    }
+
+    h1.landing-h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .card-section {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 30px 0px;
+    }
+
+    .car-holder {
+        max-width: 300px;
+        width: 300px;
+        margin-top: 30px;
+        height: 370px;
+        min-height: 370px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 200;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 270px;
+    }
+
+    .health-info-text {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 0;
+        line-height: 25px;
+        margin-bottom: 0px;
+    }
+
+    .health-info-img {
+        float: right;
+        position: relative;
+        top: 0px;
+        width: 50px;
+    }
+
+    h4.health-info-header {
+        font-size: 18px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info-btn {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+    h1.landing-h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.landing-p-1 {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .landing-p-2 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .closing-the-gap-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .car-holder {
+        margin: 0px;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 200;
+    }
+
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.health-info-header {
+        font-size: 16px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 300px;
+    }
+
+    .closing-the-gap-p {
+        text-align: justify;
+    }
+
+    .card-btn-div.text-center {
+        margin-top: 20px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .inner-overlay-p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 16px 0px;
+        height: 125px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 300px;
+    }
+
+    .stay-in-the-know-img {
+        width: 250px;
+        display: none;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 300px;
+        margin: 0px;
+    }
+    
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+    h1.landing-h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.landing-p-1 {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .landing-p-2 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .closing-the-gap-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .car-holder {
+        margin: 0px;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 200;
+    }
+
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.health-info-header {
+        font-size: 16px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 300px;
+    }
+
+    .closing-the-gap-p {
+        text-align: justify;
+    }
+
+    .card-btn-div.text-center {
+        margin-top: 20px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .inner-overlay-p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 16px 0px;
+        height: 125px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 315px;
+    }
+
+    .stay-in-the-know-img {
+        width: 250px;
+        display: none;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 300px;
+        margin: 0px;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 315px;
+        margin: 0px;
+    }
+
+    .car-holder {
+        max-width: 315px;
+        width: 315px;
+        margin-top: 30px;
+        height: 370px;
+        min-height: 370px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 384px) {
+    h1.landing-h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.landing-p-1 {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .landing-p-2 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .closing-the-gap-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .car-holder {
+        margin: 0px;
+        margin-bottom: 20px;
+        min-height: 300px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 200;
+    }
+
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.health-info-header {
+        font-size: 16px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 300px;
+    }
+
+    .closing-the-gap-p {
+        text-align: justify;
+    }
+
+    .card-btn-div.text-center {
+        margin-top: 20px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .inner-overlay-p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 16px 0px;
+        height: 125px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 325px;
+    }
+
+    .stay-in-the-know-img {
+        width: 250px;
+        display: none;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 300px;
+        margin: 0px;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 315px;
+        margin: 0px;
+    }
+
+    .car-holder {
+        max-width: 325px;
+        width: 325px;
+        margin-top: 30px;
+        height: 370px;
+        min-height: 370px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    .hero-img {
+        width: 850px;
+        position: relative;
+        top: -75px;
+        z-index: 1;
+        left: 90px;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+    h1.landing-h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.landing-p-1 {
+        font-family: Manrope;
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .landing-p-2 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 400px;
+    }
+
+    .closing-the-gap-h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .closing-the-gap-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .car-holder {
+        max-width: 260px;
+        width: 260px;
+        margin-top: 30px;
+        height: 350px;
+        min-height: 350px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 200;
+    }
+
+    .col-xs-12.col-sm-12.col-md-10.col-lg-10 {
+        padding: 0px;
+    }
+
+    .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h4.health-info-header {
+        font-size: 16px;
+        font-family: Manrope;
+        letter-spacing: 0;
+        line-height: 25px;
+    }
+
+    .health-info {
+        padding: 20px;
+        margin: 30px 0px;
+        height: 300px;
+    }
+
+    .closing-the-gap-p {
+        text-align: justify;
+    }
+
+    .card-btn-div.text-center {
+        margin-top: 20px;
+    }
+
+    .health-info-below {
+        margin: 0px;
+    }
+
+    .first-overlay {
+        margin-right: 0px;
+    }
+
+    .second-overlay {
+        margin-left: 0px;
+    }
+
+    .inner-overlay {
+        margin-bottom: 20px;
+    }
+
+    .inner-overlay-p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 16px 0px;
+        height: 125px;
+    }
+
+    .news-div {
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+        border: 1px solid #D2D7E6;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px 0px;
+        width: 260px;
+    }
+
+    .stay-in-the-know-img {
+        width: 250px;
+        display: none;
+    }
+
+    .stay-in-the-know-2 {
+        padding: 25px;
+        height: 350px;
+        width: 260px;
+        margin: 0px;
+    }
+    
+}
+
+#hambmenu {
+	position: relative;
+	width: 40px;
+	height: 45px;
+	float: left;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+#hambmenu span {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	vertical-align: middle;
+	margin: 20px 0 0 15px;
+	background: #4A557D;
+	border-radius: 8px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: 0.25s ease-in-out;
+	padding: 0px;
+}
+
+#hambmenu span:nth-child(1) {
+	top: 0px;
+}
+#hambmenu span:nth-child(2),
+#hambmenu span:nth-child(3) {
+	top: 10px;
+}
+#hambmenu span:nth-child(4) {
+	top: 20px;
+}
+#hambmenu.isopen span:nth-child(1) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+	opacity: 0;
+}
+#hambmenu.isopen span:nth-child(2) {
+	transform: rotate(45deg);
+}
+#hambmenu.isopen span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+#hambmenu.isopen span:nth-child(4) {
+	top: 18px;
+	width: 0%;
+	left: 50%;
+	opacity: 0;
+}
+
+.hambclicker {
+	height: 48px;
+	width: 25%;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.left-slidein-view {
+    background: #3f4c78;
+    height: calc(100vh - 65px);
+    display: none;
+    text-align: center;
+    font-size: 17px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 65px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    animation: TopRightAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.left-slidein-view.isopen{
+    background: #3f4c78;
+    height: calc(100vh - 65px);
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 65px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    animation: TopLeftAnimation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes TopLeftAnimation {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes TopRightAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200%);
+    }
+  }
+
+  @keyframes NavLinkAnimation {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+  }
+
+@media (min-width: 760px) {
+	.left-slidein-view{
+		display: none;
+    }
+    
+    #hambmenu{
+        display: none;
+    }
+
+    #hambclicker{
+        display: none;
+    }
+}
+@media (min-width: 990px) {
+	.left-slidein-view{
+		display: none;
+    }
+    
+    #hambmenu{
+        display: none;
+    }
+
+    #hambclicker{
+        display: none;
+    }
 }

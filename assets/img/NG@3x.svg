@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>16DB0A59-8768-4EEF-99B3-8EC3253894D8@3x</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="18" height="12.8571429" rx="2"></rect>
+    </defs>
+    <g id="primary" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage-amended" transform="translate(-1119.000000, -4759.000000)">
+            <g id="locations" transform="translate(1119.000000, 4709.000000)">
+                <g id="NG" transform="translate(0.000000, 50.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <rect stroke="#F5F5F5" stroke-width="0.5" x="0.25" y="0.25" width="17.5" height="12.3571429" rx="2"></rect>
+                    <rect id="Mask" fill="#189B62" mask="url(#mask-2)" x="12" y="0" width="6" height="12.8571429"></rect>
+                    <rect id="Rectangle-2" fill="#189B62" mask="url(#mask-2)" x="0" y="0" width="6" height="12.8571429"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
