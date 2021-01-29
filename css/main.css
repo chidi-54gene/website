@@ -1567,7 +1567,7 @@ h4.health-info-header {
   }
 
 @media (min-width: 760px) {
-	.left-slidein-view{
+	.left-slidein-view.isopen{
 		display: none;
     }
     
