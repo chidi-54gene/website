@@ -69,10 +69,10 @@ li {
   text-align: justify;
 }
 ul > li {
-  text-indent: 26px hanging;
+  text-indent: 26px hanging !important;
 }
 ol > li {
-  text-indent: 2rem hanging;
+  text-indent: 2rem hanging !important;
 }
 ul > li::marker {
   color: #81c677;
@@ -147,4 +147,7 @@ ol ol > li::before {
   font-size: 0.875rem; /* 14px */
   font-weight: 300; /* Light */
   text-align: center;
+}
+.signature {
+  width: 7.5rem; /* 120px */
 }
