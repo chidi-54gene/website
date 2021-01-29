@@ -9,6 +9,10 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .container,
 .row,
 .col,
