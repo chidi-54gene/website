@@ -1,0 +1,30 @@
+iframe#careers-open-positions {
+    border: none !important;
+    height: 720px !important;
+    font-family: Manrope;
+}
+
+.body-font.careers-text {
+    color: #252939;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+div#zr-panel-container {
+    font-family: Manrope;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.jobListTable td {
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    font-weight: normal;
+    color: #444;
+    line-height: 30px !important;
+}

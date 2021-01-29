@@ -78,7 +78,7 @@ nav.navbar.navbar-expand-lg {
     box-sizing: border-box;
     height: 82px;
     border: 1px solid #F4F6FF;
-    opacity: 0.8;
+    opacity: 0.95;
     background-color: #FFFFFF !important;
     box-shadow: 0 0 8px 0 rgba(26, 29, 39, 0.14);
     padding: 0px 130px;
@@ -360,16 +360,12 @@ h5.footer-ul-header {
 
 li.footer-li a {
     font-family: Manrope;
-    font-size: 12px;
-    font-weight: 100;
-    letter-spacing: 0;
-    line-height: 26px;
     color: #e4e4e4;
     font-family: Manrope;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0;
-    line-height: 26px;
+    line-height: 35px;
 }
 
 li.footer-li a:hover {
@@ -782,6 +778,10 @@ h4.health-info-header {
         display: none;
     }
 
+    .logo {
+        width: 120px;
+    }
+
     .navbar-collapse {
         background: #20263e;
     }
@@ -833,6 +833,12 @@ h4.health-info-header {
     .contact-us {
         height: 300px;
     }
+
+    .news-div {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
 
     h3.contact-us-header {
         color: #FFFFFF;
