@@ -166,5 +166,15 @@
 
       </ul>
   </div>
+
+  <script>
+    function toggleMenu(){
+        var hambmenu = document.getElementById("hambmenu");
+        hambmenu.classList.toggle("isopen");
+        var leftSideBar = document.getElementById("sidebar");
+        document.getElementById("sidebar").style.display = "block";
+        leftSideBar.classList.toggle("isopen");
+      }
+  </script>
 </body>
 </html>
