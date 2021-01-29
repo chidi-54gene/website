@@ -349,6 +349,11 @@ footer.footer.global-padding {
     margin-bottom: 80px;
 }
 
+.footer-arrow {
+    display: inherit;
+    margin: 0% 3%;
+}
+
 h5.footer-ul-header {
     color: #FFFFFF;
     font-family: Manrope;
@@ -356,6 +361,12 @@ h5.footer-ul-header {
     font-weight: 600;
     letter-spacing: 0;
     line-height: 26px;
+}
+
+.footer-dropdown-a {
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 li.footer-li a {

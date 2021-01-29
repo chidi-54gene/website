@@ -45,8 +45,8 @@ strong {
   font-weight: 600; /* Semi-bold */
 }
 p {
-  font-size: 1rem; /* 16px */
-  line-height: 1.875rem; /* 30px */
+  font-size: 16px;
+  line-height: 35px;
   margin: 0;
   margin-bottom: 2.25rem; /* 36px */
   padding: 0;
@@ -73,6 +73,8 @@ li {
 .typography-body ol > li {
   text-indent: -2rem;
   padding-left: 1.75rem;
+  font-size: 16px;
+    line-height: 35px;
 }
 .typography-body ul > li {
   text-indent: -1.625rem;
