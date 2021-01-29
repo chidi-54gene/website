@@ -68,12 +68,25 @@ li {
   list-style-position: inside;
   text-align: justify;
 }
-ul > li {
-  text-indent: 26px hanging !important;
+.typography-body ol > li {
+  text-indent: -2rem;
+  padding-left: 1.75rem;
 }
-ol > li {
-  text-indent: 2rem hanging !important;
+.typography-body ul > li {
+  text-indent: -1.625rem;
+  padding-left: 1.25rem;
 }
+.typography-body h2.numbered {
+  counter-increment: header-counter;
+}
+.typography-body {
+  counter-reset: header-counter;
+}
+.typography-body h2.numbered::before {
+  content: counter(header-counter) ".";
+  margin-right: 2.625rem;
+}
+
 ul > li::marker {
   color: #81c677;
   font-size: 1.125em;
@@ -98,9 +111,12 @@ ol > li::before {
   text-align: left;
   font-weight: 600;
 }
+h2.numbered + ol > li::before {
+  content: counter(header-counter) "." counter(list-counter);
+}
 
 ol ol > li::before {
-  content: counter(list-counter, lower-alpha) ".";
+  content: counter(list-counter) ".";
 }
 
 .title-description {
