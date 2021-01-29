@@ -360,16 +360,12 @@ h5.footer-ul-header {
 
 li.footer-li a {
     font-family: Manrope;
-    font-size: 12px;
-    font-weight: 100;
-    letter-spacing: 0;
-    line-height: 26px;
     color: #e4e4e4;
     font-family: Manrope;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0;
-    line-height: 26px;
+    line-height: 35px;
 }
 
 li.footer-li a:hover {
@@ -842,6 +838,7 @@ h4.health-info-header {
         min-width: 100%;
         max-width: 100%;
     }
+
 
     h3.contact-us-header {
         color: #FFFFFF;
