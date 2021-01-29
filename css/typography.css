@@ -14,6 +14,7 @@ h4,
 h5,
 h6 {
   font-weight: 300; /* Light */
+  margin-top: 3rem;
   margin-bottom: 1rem; /* 16px */
   color: #252939;
 }
@@ -49,6 +50,7 @@ p {
   margin: 0;
   margin-bottom: 2.25rem; /* 36px */
   padding: 0;
+  text-align: justify;
 }
 a {
   color: #81c677;
@@ -86,7 +88,11 @@ li {
   content: counter(header-counter) ".";
   margin-right: 2.625rem;
 }
-
+.typography-body h2.numbered ~ p,
+.typography-body h2.numbered ~ h3,
+.typography-body h2.numbered ~ ul {
+  margin-left: 3.875rem;
+}
 ul > li::marker {
   color: #81c677;
   font-size: 1.125em;
