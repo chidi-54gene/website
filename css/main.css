@@ -52,6 +52,24 @@ a {
     z-index: 10;
 } */
 
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
 .default-btn {
     border-radius: 5px;
     font-family: Manrope;
@@ -78,7 +96,7 @@ nav.navbar.navbar-expand-lg {
     box-sizing: border-box;
     height: 82px;
     border: 1px solid #F4F6FF;
-    opacity: 0.95;
+    opacity: 1;
     background-color: #FFFFFF !important;
     box-shadow: 0 0 8px 0 rgba(26, 29, 39, 0.14);
     padding: 0px 130px;
@@ -169,7 +187,7 @@ h1.landing-h1 {
 
 .logo {
     width: 145px;
-    margin-right: 25px;
+    margin-right: 60px;
 }
 
 h3.contact-us-header {
