@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="54gene is equalizing precision medicine by including underrepresented Africans in global genomics research."
+    />
+    <meta
+      name="keywords"
+      content="Genomics, Precision Medicine, African Genetics, Translational research, Healthcare in Africa, Biotechnology, Inclusive Clinical trials, Innovation, Science, Healthtech, Discovery research"
+    />
+    <title>54gene - Equalizing Precision Medicine</title>
+
+    <link href="./assets/img/logo-icon@3x.svg" rel="icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/typography.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Nav starts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./assets/img/54gene-logo.svg"
+          class="img-responsive logo"
+          alt=""
+        />
+      </a>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        id="sidebar-open"
+        onclick="openNav()"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" onclick="openNav()"></span>
+      </button>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        id="sidebar-close"
+        onclick="closeNav()"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" onclick="closeNav()"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >COVID-19 testing <span class="sr-only">(current)</span></a
+            >
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">BioBank </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Sectors
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item pull-right">
+            <button class="btn btn-default contact-us-btn float-right">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav ends -->
+
+    <div id="sidebar">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"
+            >COVID-19 testing <span class="sr-only">(current)</span></a
+          >
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">BioBank </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Sectors
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+
+        <li class="nav-item pull-right">
+          <button class="btn btn-default contact-us-btn float-right">
+            Contact
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <section class="global-padding typography-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-4">
+            <h1>
+              Heading one blanc ego <strong>asentior</strong>, cum soluta nobis
+              est conect?
+            </h1>
+            <p class="title-description p-0 m-0">
+              Large Paragraph style, simul atque admontionem altera prompta et
+              caritatem, quae ab illo inventore veritatis et dolorem
+              <strong> ipsum autem vel eum</strong> iure magna.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="global-padding typography-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 mt-4">
+            <h2>
+              Heading two rimum igitur, inquit, modo ista sis aequitate, quam ob
+              rem.
+            </h2>
+            <p>
+              Standard paragraph style fuerit causa, mox videro; interea hoc
+              epicurus in armatum hostem impetum fecisse aut in animis nostris
+              inesse notionem, ut de emphasis style sensibus reliqui nihil ut de
+              commodis suis cogitarent? at id omnia referri oporteat, ipsum
+              autem nusquam hoc epicurus in gravissimo bello animadversionis
+              metu.
+              <br />
+              <br />
+              Ut placet, inquam tum dicere exorsus est cur verear, ne ad minima
+              veniam, quis autem quidam e nostris, qui officia
+              <a href="#"> hyperlink style mollitia animi</a>, id ne ad naturam
+              aut dolores suscipiantur maiorum dolorum fuga et via procedat
+              oratio quaerimus igitur, hyperlink hover style officiis debitis
+              aut perferendis magna aquila.
+              <br />
+              <br />
+              Sunt autem vel eum fugiat, quo aut fugiat aliquid, praeter
+              voluptatem ipsam per se repellere, idque instituit docere sic:
+              omne animal, <mark>text highlight effect</mark> in culpa, qui
+              officia deserunt mollitia animi, id totum evertitur eo est laborum
+              et dolorem ipsum, quia consequuntur magni dolores suscipiantur.
+            </p>
+            <h3>
+              Heading three probabo, inquit, sic agam, ut labore et fortibus
+              viris commemorandis lorem ipsum dolor.
+            </h3>
+            <p>
+              Primum igitur, quid malum, sensu iudicari, sed quia non numquam
+              eius modi tempora incidunt, ut summo bono, dolorem ipsum per se
+              repellere, idque instituit docere sic: omne animal, simul atque
+              corrupti, quos tu paulo ante cum memoriter, tum etiam ac ratione
+              et dolore suo sanciret.
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>
+                Consetetur adispicing elit magna aquila
+                <ul>
+                  <li>Tum etiam ac ratione et dolore</li>
+                </ul>
+              </li>
+              <li>Omne animal in culpa, qui officia</li>
+            </ul>
+            <p>
+              Primum igitur, inquit, modo dixi, constituto, ut calere ignem,
+              nivem esse ratione et argumentandum et aut reiciendis voluptatibus
+              maiores alias consequatur aut odit aut fugit.
+            </p>
+            <ol>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>
+                Consetetur adispicing elit magna aquila
+                <ol>
+                  <li>Tum etiam ac ratione et dolore</li>
+                </ol>
+              </li>
+              <li>Omne animal in culpa, qui officia</li>
+            </ol>
+            <p>
+              Omne animal, simul atque integre iudicante itaque negat opus esse
+              appetendum, alterum aspernandum sentiamus alii autem, quibus ego
+              cum soluta nobis est consecutus? laudem et argumentandum et
+              caritatem, quae ab eo est consecutus? laudem et aut petat aut in
+              liberos atque integre iudicante itaque earum.
+            </p>
+
+            <figure class="quote">
+              <blockquote>
+                <p class="quote__body">
+                  “In quo ignorare vos arbitrer, sed ipsius honestatis decore
+                  laudandis, id est laborum et voluptatem ut earum motus et
+                  dolorem? sunt autem quidam e nostris, qui haec putat, ut aut
+                  petat aut quid et ultimum bonorum, quod maxime.”
+                </p>
+              </blockquote>
+              <figcaption class="quote__attribution">
+                <strong>Abasi Ene-Obong<br />CEO</strong>, 54gene
+              </figcaption>
+            </figure>
+
+            <h4>
+              Heading four primum igitur, quid iudicat, quo aut quid sit
+              voluptatem ut aliquid ex eo est eligendi optio, cumque nihil
+              impedit, quo enim ad minima.
+            </h4>
+            <p>
+              Certe, inquam, pertinax non ero tibique, si mihi probabis ea, quae
+              dices, libenter assentiar probabo, inquit, modo ista sis
+              aequitate, quam interrogare aut voluptates omittantur maiorum
+              voluptatum deleniti atque integre iudicante itaque earum motus et
+              argumentandum et dolorem? sunt autem nusquam hoc epicurus in
+              animis.
+            </p>
+
+            <div class="buttons mx-n5 pl-5 pt-3 pb-2 pr-5">
+              <div class="buttons__group">
+                <button class="button button--big button--solid">
+                  Big Button Solid
+                </button>
+                <button class="button button--big button--ghost">
+                  Big Button Ghost
+                </button>
+              </div>
+              <div class="buttons__group">
+                <button
+                  class="button button--regular button--solid button--purple"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--purple"
+                >
+                  Regular Button Ghost
+                </button>
+                <button
+                  class="button button--regular button--solid button--green"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--green"
+                >
+                  Regular Button Ghost
+                </button>
+                <button
+                  class="button button--regular button--solid button--pink"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--pink"
+                >
+                  Regular Button Ghost
+                </button>
+                <button
+                  class="button button--regular button--solid button--yellow"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--yellow"
+                >
+                  Regular Button Ghost
+                </button>
+              </div>
+            </div>
+            <div class="buttons buttons--dark mx-n5 pl-5 mb-5">
+              <div class="buttons__group">
+                <button
+                  class="button button--regular button--solid button--purple"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--purple"
+                >
+                  Regular Button Ghost
+                </button>
+                <button
+                  class="button button--regular button--solid button--green"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--green"
+                >
+                  Regular Button Ghost
+                </button>
+                <button
+                  class="button button--regular button--solid button--pink"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--pink"
+                >
+                  Regular Button Ghost
+                </button>
+                <button
+                  class="button button--regular button--solid button--yellow"
+                >
+                  Regular Button Solid
+                </button>
+                <button
+                  class="button button--regular button--ghost button--yellow"
+                >
+                  Regular Button Ghost
+                </button>
+              </div>
+              <div class="buttons__group">
+                <button
+                  class="button button--big button--progress button--yellow"
+                >
+                  Big Button Solid
+                </button>
+                <button
+                  class="button button--regular button--progress button--pink"
+                >
+                  Big Button Ghost
+                </button>
+              </div>
+            </div>
+
+            <form action="#">
+              <h4 class="form-title">Form Heading</h4>
+              <p>
+                Form explainer paragraph quid ex eo ortum, tam egregios viros
+                censes tantas res.
+              </p>
+
+              <div class="row justify-content-between">
+                <div class="form-group col-md-6 p-0 pr-md-2 mb-3">
+                  <input class="form-control" placeholder="Field one" />
+                </div>
+                <div class="form-group col-md-6 p-0 pl-md-2 mb-3">
+                  <input
+                    class="form-control"
+                    placeholder="Field two"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group col-12 mb-3">
+                <input class="form-control" placeholder="Full-width field" />
+              </div>
+              <div class="form-group col-12 mb-3">
+                <input
+                  class="form-control is-invalid"
+                  placeholder="Full-width field"
+                />
+                <small class="invalid-feedback"
+                  >Error explainer message styling</small
+                >
+              </div>
+              <div class="row justify-content-between">
+                <div class="form-group col-md-6 p-0 pr-md-2 mb-3">
+                  <select class="form-control">
+                    <option value="">Selection Field</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6 p-0 pl-md-2 mb-3">
+                  <input
+                    class="form-control"
+                    placeholder="Field two"
+                    required
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 mt-4">
+            <strong> Color Swatches </strong>
+            <br />
+            <div class="swatches">
+              <div class="swatch swatch--purple">
+                <div class="color">
+                  <svg
+                    width="38"
+                    height="40"
+                    viewBox="0 0 38 40"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>759A07EE-7CF5-4289-A37C-A7ADF67C067B</title>
+                    <g
+                      id="primary"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="typography"
+                        transform="translate(-1039.000000, -574.000000)"
+                        fill="#4A557D"
+                      >
+                        <g
+                          id="Group-7"
+                          transform="translate(1026.500000, 574.000000)"
+                        >
+                          <path
+                            d="M21.521925,0.737276656 L47.7644924,6.99631257 C49.3030196,7.36326208 50.2923628,8.86166098 50.0254783,10.4206641 L45.4394246,37.2100518 C45.1598559,38.8431493 43.6093337,39.9404012 41.9762362,39.6608326 C41.9319295,39.6532478 41.8877988,39.6446681 41.8438777,39.6351 L15.3220811,33.8574253 C13.7464643,33.514183 12.7240552,31.9867772 13.0072765,30.399273 L17.8725594,3.12852405 C18.1635584,1.49742455 19.7217271,0.411058437 21.3528266,0.702057431 C21.4095191,0.712171744 21.4659086,0.723916352 21.521925,0.737276656 Z"
+                            id="swatch-purple"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="code">#4A557D</div>
+              </div>
+              <div class="swatch swatch--green">
+                <div class="color">
+                  <svg
+                    width="38"
+                    height="40"
+                    viewBox="0 0 38 40"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>1C73D4AE-E0E8-4327-98A4-CB28B2D6AE57</title>
+                    <g
+                      id="primary"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="typography"
+                        transform="translate(-1129.000000, -574.000000)"
+                        fill="#81C677"
+                      >
+                        <g
+                          id="Group-7"
+                          transform="translate(1026.500000, 574.000000)"
+                        >
+                          <path
+                            d="M111.521925,0.737276656 L137.764492,6.99631257 C139.30302,7.36326208 140.292363,8.86166098 140.025478,10.4206641 L135.439425,37.2100518 C135.159856,38.8431493 133.609334,39.9404012 131.976236,39.6608326 C131.931929,39.6532478 131.887799,39.6446681 131.843878,39.6351 L105.322081,33.8574253 C103.746464,33.514183 102.724055,31.9867772 103.007277,30.399273 L107.872559,3.12852405 C108.163558,1.49742455 109.721727,0.411058437 111.352827,0.702057431 C111.409519,0.712171744 111.465909,0.723916352 111.521925,0.737276656 Z"
+                            id="swatch-green"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="code">#81C677</div>
+              </div>
+              <div class="swatch swatch--pink">
+                <div class="color">
+                  <svg
+                    width="38"
+                    height="40"
+                    viewBox="0 0 38 40"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>E60F02F1-BD91-40EC-AB49-2211AD2A9D0D</title>
+                    <g
+                      id="primary"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="typography"
+                        transform="translate(-1219.000000, -574.000000)"
+                        fill="#F05F87"
+                      >
+                        <g
+                          id="Group-7"
+                          transform="translate(1026.500000, 574.000000)"
+                        >
+                          <path
+                            d="M201.521925,0.737276656 L227.764492,6.99631257 C229.30302,7.36326208 230.292363,8.86166098 230.025478,10.4206641 L225.439425,37.2100518 C225.159856,38.8431493 223.609334,39.9404012 221.976236,39.6608326 C221.931929,39.6532478 221.887799,39.6446681 221.843878,39.6351 L195.322081,33.8574253 C193.746464,33.514183 192.724055,31.9867772 193.007277,30.399273 L197.872559,3.12852405 C198.163558,1.49742455 199.721727,0.411058437 201.352827,0.702057431 C201.409519,0.712171744 201.465909,0.723916352 201.521925,0.737276656 Z"
+                            id="swatch-pink"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="code">#F05F87</div>
+              </div>
+              <div class="swatch swatch--yellow">
+                <div class="color">
+                  <svg
+                    width="38"
+                    height="40"
+                    viewBox="0 0 38 40"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>1FDC9966-29CD-4A57-AB30-6716DEAB8613</title>
+                    <g
+                      id="primary"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="typography"
+                        transform="translate(-1039.000000, -677.000000)"
+                        fill="#F5BF2F"
+                      >
+                        <g
+                          id="Group-7"
+                          transform="translate(1026.500000, 574.000000)"
+                        >
+                          <path
+                            d="M21.521925,103.737277 L47.7644924,109.996313 C49.3030196,110.363262 50.2923628,111.861661 50.0254783,113.420664 L45.4394246,140.210052 C45.1598559,141.843149 43.6093337,142.940401 41.9762362,142.660833 C41.9319295,142.653248 41.8877988,142.644668 41.8438777,142.6351 L15.3220811,136.857425 C13.7464643,136.514183 12.7240552,134.986777 13.0072765,133.399273 L17.8725594,106.128524 C18.1635584,104.497425 19.7217271,103.411058 21.3528266,103.702057 C21.4095191,103.712172 21.4659086,103.723916 21.521925,103.737277 Z"
+                            id="swatch-yellow"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="code">#F5BF2F</div>
+              </div>
+              <div class="swatch swatch--dark">
+                <div class="color">
+                  <svg
+                    width="38"
+                    height="40"
+                    viewBox="0 0 38 40"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>C6F5D62D-AB9D-4F9D-B063-6777F8AB4A4E</title>
+                    <g
+                      id="primary"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="typography"
+                        transform="translate(-1129.000000, -677.000000)"
+                        fill="#252939"
+                      >
+                        <g
+                          id="Group-7"
+                          transform="translate(1026.500000, 574.000000)"
+                        >
+                          <path
+                            d="M111.521925,103.737277 L137.764492,109.996313 C139.30302,110.363262 140.292363,111.861661 140.025478,113.420664 L135.439425,140.210052 C135.159856,141.843149 133.609334,142.940401 131.976236,142.660833 C131.931929,142.653248 131.887799,142.644668 131.843878,142.6351 L105.322081,136.857425 C103.746464,136.514183 102.724055,134.986777 103.007277,133.399273 L107.872559,106.128524 C108.163558,104.497425 109.721727,103.411058 111.352827,103.702057 C111.409519,103.712172 111.465909,103.723916 111.521925,103.737277 Z"
+                            id="swatch-dark"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="code">#252939</div>
+              </div>
+              <div class="swatch swatch--pale">
+                <div class="color">
+                  <svg
+                    width="39"
+                    height="41"
+                    viewBox="0 0 39 41"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>5A33DF7A-03D5-4185-ADD8-DB092EDA94A3</title>
+                    <g
+                      id="primary"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="typography"
+                        transform="translate(-1219.000000, -677.000000)"
+                        fill="#F4F6FF"
+                        stroke="#D2D7E6"
+                      >
+                        <g
+                          id="Group-7"
+                          transform="translate(1026.500000, 574.000000)"
+                        >
+                          <path
+                            d="M201.521925,103.737277 L227.764492,109.996313 C229.30302,110.363262 230.292363,111.861661 230.025478,113.420664 L225.439425,140.210052 C225.159856,141.843149 223.609334,142.940401 221.976236,142.660833 C221.931929,142.653248 221.887799,142.644668 221.843878,142.6351 L195.322081,136.857425 C193.746464,136.514183 192.724055,134.986777 193.007277,133.399273 L197.872559,106.128524 C198.163558,104.497425 199.721727,103.411058 201.352827,103.702057 C201.409519,103.712172 201.465909,103.723916 201.521925,103.737277 Z"
+                            id="swatch-pale"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="code">#F4F6FF</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer global-padding">
+      <div class="footer-div">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+              <img
+                src="./assets/img/logo-icon@3x.svg"
+                class="img img-responsive logo-icon"
+                alt=""
+                srcset=""
+              />
+              <br />
+              <p class="footer-copy">© 2020</p>
+
+              <div class="row">
+                <div class="col-2">
+                  <a href="#">
+                    <img
+                      src="./assets/img/Twitter-black.svg"
+                      class="img img-responsive sm-icon"
+                      alt=""
+                      srcset=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <img
+                      src="./assets/img/LinkedIn-black.svg"
+                      class="img img-responsive sm-icon"
+                      alt=""
+                      srcset=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <img
+                      src="./assets/img/Instagram-black.svg"
+                      class="img img-responsive sm-icon"
+                      alt=""
+                      srcset=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2">
+                  <a href="#">
+                    <img
+                      src="./assets/img/Facebook-black.svg"
+                      class="img img-responsive sm-icon"
+                      alt=""
+                      srcset=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+              <h5 class="footer-ul-header">Legal</h5>
+              <ul class="footer-ul">
+                <li class="footer-li">
+                  <a href="#"> Privacy notice </a>
+                </li>
+                <li class="footer-li">
+                  <a href="#"> ABC policy </a>
+                </li>
+                <li class="footer-li">
+                  <a href="#"> Code of conduct </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+              <h5 class="footer-ul-header">Useful links</h5>
+              <ul class="footer-ul">
+                <li class="footer-li">
+                  <a href="#"> FAQ </a>
+                </li>
+                <li class="footer-li">
+                  <a href="#"> COVID-19 Testing </a>
+                </li>
+                <li class="footer-li">
+                  <a href="#"> Careers </a>
+                </li>
+                <li class="footer-li">
+                  <a href="#"> Blog </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+              <h5 class="footer-ul-header">Locations</h5>
+              <ul class="footer-ul">
+                <li class="footer-li">
+                  <a href="#">
+                    <img
+                      src="./assets/img/nigeria-flag.png"
+                      class="img img-responsive flag"
+                      alt=""
+                      srcset=""
+                    />
+                    Lagos, Nigeria
+                  </a>
+                </li>
+                <li class="footer-li">
+                  <a href="#">
+                    <img
+                      src="./assets/img/US@3x.svg"
+                      class="img img-responsive flag"
+                      alt=""
+                      srcset=""
+                    />
+                    Washington, D.C., USA
+                  </a>
+                </li>
+                <li class="footer-li">
+                  <a href="tel:012296553" class="my-auto banner-text"
+                    >012296553</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <img src="./assets/img/colour-bar@3x.svg" class="img-responsive img bar-footer" alt="" srcset=""> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidebar-open").style.display = "none";
+        document.getElementById("sidebar-close").style.display = "inline-block";
+        document.getElementById("sidebar").style.width = "100%";
+        document.getElementById("sidebar").style.marginLeft = "0px";
+      }
+
+      function closeNav() {
+        document.getElementById("sidebar-close").style.display = "none";
+        document.getElementById("sidebar-open").style.display = "inline-block";
+        document.getElementById("sidebar").style.width = "100%";
+        document.getElementById("sidebar").style.marginLeft = "2000px";
+      }
+    </script>
+  </body>
+</html>
