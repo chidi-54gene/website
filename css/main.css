@@ -811,6 +811,11 @@ h4.health-info-header {
         width: 120px;
     }
 
+    .nav-arrow {
+        margin: 8% 15%;
+        display: inline-block;
+    }
+
     .navbar-collapse {
         background: #20263e;
     }
@@ -1598,7 +1603,7 @@ h4.health-info-header {
 	top: 8px;
 	left: 8px;
 	cursor: pointer;
-	z-index: -1;
+	z-index: 9;
 }
 
 .left-slidein-view {
