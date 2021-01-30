@@ -52,6 +52,24 @@ a {
     z-index: 10;
 } */
 
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
 .default-btn {
     border-radius: 5px;
     font-family: Manrope;
@@ -78,7 +96,7 @@ nav.navbar.navbar-expand-lg {
     box-sizing: border-box;
     height: 82px;
     border: 1px solid #F4F6FF;
-    opacity: 0.8;
+    opacity: 1;
     background-color: #FFFFFF !important;
     box-shadow: 0 0 8px 0 rgba(26, 29, 39, 0.14);
     padding: 0px 130px;
@@ -169,7 +187,7 @@ h1.landing-h1 {
 
 .logo {
     width: 145px;
-    margin-right: 25px;
+    margin-right: 60px;
 }
 
 h3.contact-us-header {
@@ -257,7 +275,7 @@ img.img-responsive.hero-img {
 .card-text {
     font-size: 14px;
     text-align: left;
-    padding: 25px;
+    padding: 20px;
     line-height: 25px;
     font-weight: 200;
 }
@@ -332,7 +350,7 @@ img.img-responsive.hero-img {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: 30px;
+    line-height: 25px;
     text-align: center;
 }
 
@@ -349,6 +367,11 @@ footer.footer.global-padding {
     margin-bottom: 80px;
 }
 
+.footer-arrow {
+    display: inherit;
+    margin: 0% 3%;
+}
+
 h5.footer-ul-header {
     color: #FFFFFF;
     font-family: Manrope;
@@ -358,18 +381,20 @@ h5.footer-ul-header {
     line-height: 26px;
 }
 
+.footer-dropdown-a {
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: 300;
+}
+
 li.footer-li a {
     font-family: Manrope;
-    font-size: 12px;
-    font-weight: 100;
-    letter-spacing: 0;
-    line-height: 26px;
     color: #e4e4e4;
     font-family: Manrope;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0;
-    line-height: 26px;
+    line-height: 35px;
 }
 
 li.footer-li a:hover {
@@ -782,6 +807,15 @@ h4.health-info-header {
         display: none;
     }
 
+    .logo {
+        width: 120px;
+    }
+
+    .nav-arrow {
+        margin: 8% 15%;
+        display: inline-block;
+    }
+
     .navbar-collapse {
         background: #20263e;
     }
@@ -814,7 +848,7 @@ h4.health-info-header {
         padding: 10px 0 !important;
         margin: 15px 0px;
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 500;
     }
 
     .navbar-light .navbar-toggler {
@@ -833,6 +867,12 @@ h4.health-info-header {
     .contact-us {
         height: 300px;
     }
+
+    .news-div {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
 
     h3.contact-us-header {
         color: #FFFFFF;
@@ -1563,7 +1603,7 @@ h4.health-info-header {
 	top: 8px;
 	left: 8px;
 	cursor: pointer;
-	z-index: 9;
+	z-index: -1;
 }
 
 .left-slidein-view {

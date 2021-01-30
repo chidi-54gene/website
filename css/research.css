@@ -1,0 +1,158 @@
+.research-header {
+    font-family: Manrope;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.research-sub-header {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.typography-header {
+    /* background-image: url('./../assets/img/research-header.svg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;  
+    background-color: #f4f6ff;
+}
+
+.research-leverage-section {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.research-leverage-header {
+    color: #252939;
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 44px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.research-leverage-text {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 200px;
+    margin: 0px;
+}
+
+.research-speed-up {
+    background: #F4F6FF;
+}
+
+.res-btn {
+    width: 400px;
+    background: #fff;
+}
+
+.research-speed-header {
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.health-info {
+    background: #fff;
+    padding: 30px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 30px 10px;
+    height: 300px;
+}
+
+.health-info-header {
+    margin: 0px;
+}
+
+.health-info-text {
+    color: #252939;
+    margin-bottom: 0px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.health-info-img {
+    float: right;
+    position: relative;
+    top: -10px;
+    width: 60px;
+}
+
+.health-info-text {
+    max-height: 150px;
+    min-height: 150px;
+}
+
+.research-contact .contact-us-header {
+    margin: 0px;
+    margin-bottom: 60px;
+}
+
+.research-contact  .contact-us-p {
+    margin: 0px;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.rect-img {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.research-count-title {
+    text-align: center;
+}
+
+.research-counter-div {
+    text-align: center;
+    color: #fff;
+    margin: 80px 0px;
+}
+
+.research-counter {
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
