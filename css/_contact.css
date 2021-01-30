@@ -51,3 +51,18 @@ a.anchor-link {
     text-decoration: underline;
     color: #81C677;
 }
+
+@media (max-width: 768px){
+    .contact-us {
+        background-image: url(./../assets/img/Contact-us-section.png);
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 900px;
+        object-fit: cover;
+    }
+
+    section.contact-us.global-padding.research-contact {
+        padding: 30px;
+    }
+}
