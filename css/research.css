@@ -203,4 +203,9 @@
     section.contact-us.global-padding.research-contact {
         padding: 30px;
     }
+
+    .research-header {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
 }
