@@ -2,7 +2,7 @@
   background-color: #f4f6ff;
   color: #252939;
   font-family: Manrope;
-  font-weight: 250;
+  font-weight: 300;
   letter-spacing: 0;
   padding-top: 7.875rem;
   padding-bottom: 4.124rem;
@@ -74,7 +74,7 @@ li {
   text-indent: -2rem;
   padding-left: 1.75rem;
   font-size: 16px;
-    line-height: 35px;
+  line-height: 35px;
 }
 .typography-body ul > li {
   text-indent: -1.625rem;
@@ -174,4 +174,12 @@ ol ol > li::before {
 }
 .signature {
   width: 7.5rem; /* 120px */
+}
+.content-nav {
+  background-color: #4a557d;
+}
+.content-nav__link {
+  color: #f4f6ff;
+  font-weight: 600; /* Semi-bold */
+  line-height: 3rem;
 }
