@@ -182,8 +182,8 @@
     }
 
     .health-info {
-        height: 400px;
-        margin: 15px 10px;
+        height: auto;
+        margin: 15px 0px;
     }
 
     .health-info-text {
@@ -207,5 +207,64 @@
     .research-header {
         margin: 0px;
         margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 30px;
     }
+}
+
+
+@media only screen and (min-width: 411px) and (max-width: 768px) {
+   
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+    .research-header {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .research-leverage-header {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .res-btn {
+        width: 295px;
+        background: #fff;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 375px) {
+   
+
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 384px) {
+ 
+
+}
+
+
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+
+
+}
+
+
+@media (max-width: 320px) {
+  
+
+    
+}
+
+
+@media (min-width: 990px) {
+
 }

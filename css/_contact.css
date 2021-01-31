@@ -66,3 +66,32 @@ a.anchor-link {
         padding: 30px;
     }
 }
+
+
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+    .contact-us {
+        background-image: url(./../assets/img/Contact-us-section.png);
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+        object-fit: cover;
+    }
+
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 384px) {
+ 
+    .contact-us {
+        background-image: url(./../assets/img/Contact-us-section.png);
+        background-position: initial;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 950px;
+        object-fit: cover;
+    }
+
+
+}
+
