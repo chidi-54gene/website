@@ -19,3 +19,12 @@
 .accordion-button:not(.collapsed){
   background: white;
 }
+
+.accordion-header {
+  margin-bottom: 0;
+  margin: 0px !important;
+}
+
+.accordion-item h4 {
+  margin: 10px 0px;
+}
