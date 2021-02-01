@@ -127,13 +127,14 @@
   /* 40px */
 }
 
-.about-half-section__description {
-  font-size: 0.8125rem;
-  /* 13px */
-  line-height: 1.5625rem;
-  /* 25px */
-  margin-bottom: 1.5625rem;
-  /* 25px */
+.about-half-section__description.text-start {
+    font-family: Manrope;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .btn--purple,
