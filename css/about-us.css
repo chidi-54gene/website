@@ -294,7 +294,7 @@
 
 .profile-modal .modal-content {
     padding: 1.25rem;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
     border-bottom: 11px solid #f05f87;
 }
 
