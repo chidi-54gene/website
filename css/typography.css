@@ -116,7 +116,7 @@ ol > li::before {
   display: inline-block;
   width: 1rem;
   margin-right: 0.5rem;
-  text-align: left;
+  text-align: start;
   font-weight: 600;
 }
 h2.numbered + ol > li::before {
