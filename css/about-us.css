@@ -43,8 +43,7 @@ h6 strong {
 
 @media (min-width: 768px) {
   .about-card {
-    width: 23.5rem;
-    /* 376px */
+    width: 100%;
   }
 }
 
@@ -52,10 +51,8 @@ h6 strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.25rem;
-  /* 20px */
-  padding-bottom: 0.9375rem;
-  /* 15px */
+  padding: 1.5625rem;
+  /* 25px */
   mix-blend-mode: normal;
   border-radius: 5px;
 }
@@ -65,12 +62,16 @@ h6 strong {
   /* 13px */
   line-height: 1.5625rem;
   /* 25px */
-  color: #000000;
+  margin: 0;
+  text-align: start;
 }
 
-.about-card--green {
-  background: rgba(74, 85, 125, 0.1);
-  border-bottom: 5px solid #81c677;
+.about-card--pink p {
+  color: #f05f87;
+}
+
+.about-card--pink {
+  border-bottom: 5px solid #f05f87;
 }
 
 .about-card--yellow {
@@ -78,40 +79,23 @@ h6 strong {
   border-bottom: 5px solid #f5bf2f;
 }
 
-.about-section {
-  background: linear-gradient(to bottom, #fff 47.5%, #4a557d 47.5%);
-  background-size: auto 100%;
+.mission-section {
+  color: #050608;
+  padding-top: 8.875rem;
+  padding-bottom: 10.3125rem;
 }
 
 @media (min-width: 768px) {
-  .about-section {
-    background: url("../images/about-us-vector.png") no-repeat left,
-      linear-gradient(to right, #fff 50%, #4a557d 50%);
-    background-size: auto 100%;
+  .mission-section {
+    background: right 143px top 180px / 32% auto no-repeat
+        url("../images/mission-section.png"),
+      right / auto 100% no-repeat url("../images/partnership-header-flip.svg");
   }
 }
 
-.about-half-section {
-  padding-bottom: 4.6875rem;
-  /* 75px */
-}
-
-@media (min-width: 768px) {
-  .about-half-section--identity {
-    padding-right: 5.3125rem;
-    /* 85px */
-  }
-
-  .about-half-section--mission {
-    padding-left: 3.5625rem;
-    /* 57px */
-    padding-right: 8.3125rem;
-    /* 133px */
-  }
-}
-
-.about-half-section__title {
+.mission-section__title {
   display: inline-block;
+  font-family: "Manrope", san-serif;
   font-weight: 600;
   font-size: 1rem;
   /* 16px */
@@ -121,25 +105,15 @@ h6 strong {
   margin-top: 0;
   margin-bottom: 2.8125rem;
   /* 45px */
+  color: #050608;
 }
 
-.about-half-section__title--green {
-  color: #4a557d;
-  border-bottom: 3px solid #81c677;
+.mission-section__title--pink {
+  border-bottom: 4px solid #f05f87;
 }
 
-.about-half-section__title--yellow {
-  border-bottom: 3px solid #f5bf2f;
-}
-
-.about-half-section--mission .about-half-section__title,
-.about-half-section--mission h2,
-.about-half-section--mission p,
-.about-half-section__title--yellow {
-  color: #fff;
-}
-
-.about-half-section__highlight {
+.mission-section__highlight {
+  font-family: "Lora", serif;
   font-weight: 600;
   font-size: 1.625rem;
   /* 26px */
@@ -150,14 +124,13 @@ h6 strong {
   /* 40px */
 }
 
-.about-half-section__description.text-start {
+.mission-section__description {
   font-family: Manrope;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-  letter-spacing: 0em;
-  text-align: left;
+  text-align: start;
 }
 
 .btn--purple,
@@ -390,14 +363,14 @@ h6 strong {
 
 .yellow-butt {
   width: 100%;
-  background: #F5BF2F;
+  background: #f5bf2f;
   height: 6px;
   border-radius: 0px 0px 5px 5px;
 }
 
 .red-butt {
   width: 100%;
-  background: #F05F87;
+  background: #f05f87;
   height: 6px;
   border-radius: 0px 0px 5px 5px;
 }
