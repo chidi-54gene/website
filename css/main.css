@@ -344,7 +344,12 @@ img.img-responsive.hero-img {
 }
 
 .closing-the-gap.global-padding.text-center {
-    background: #F4F6FF;
+    /* background: #F4F6FF; */
+    background-image: url(./../assets/img/hero2-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: left;
 }
 
 .closing-the-gap-h2 {
