@@ -1,20 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400,500;700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: 700;
+}
+
 .typography-header--about-us h1 {
   font-size: 2.25rem;
   /* 36px */
-  line-height: 3.125rem;
-  /* 50px */
+  line-height: 2.75rem;
+  /* 44px */
 }
 
 .title-description {
+  font-size: 1rem;
+  line-height: 25px;
   text-align: start;
 }
 
 @media (min-width: 768px) {
   .typography-header--about-us {
-    background-image: url("../images/about-us-header.png");
-    background-size: 50vw auto;
-    background-position: right bottom;
-    background-repeat: no-repeat;
+    background: right bottom / auto 100% no-repeat
+        url("../images/about-us-header.svg"),
+      #f4f6ff;
   }
 }
 
@@ -128,13 +151,13 @@
 }
 
 .about-half-section__description.text-start {
-    font-family: Manrope;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: left;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .btn--purple,
