@@ -380,3 +380,24 @@ h6 strong {
   margin-top: 1.875rem;
   margin-bottom: 2.75rem;
 }
+
+.green-butt {
+  width: 100%;
+  background: #65ba59;
+  height: 6px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.yellow-butt {
+  width: 100%;
+  background: #F5BF2F;
+  height: 6px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.red-butt {
+  width: 100%;
+  background: #F05F87;
+  height: 6px;
+  border-radius: 0px 0px 5px 5px;
+}
