@@ -74,6 +74,11 @@ a {
   color: #4a557d;
 }
 
+.schematic-img {
+    /* margin-left: -23px; */
+    width: 1100px;
+}
+
 /* 
 #sidebar-close {
     display: none;
