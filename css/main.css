@@ -935,6 +935,10 @@ h4.health-info-header {
     display: block;
 }
 
+.schema-row {
+    margin-top: 40px;
+}
+
 .sub-text-header {
     font-family: Manrope;
     font-size: 18px;
@@ -1106,6 +1110,11 @@ h4.health-info-header {
     height: 650px;
   }
 
+  .closing-the-gap-h2 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+}
   
 
   h1.landing-h1 {
@@ -1193,6 +1202,11 @@ h4.health-info-header {
     padding: 30px;
     height: 675px;
   }
+
+  .schematic-img-mobile {
+    display: block;
+    width: 300px;
+}
 
   .closing-the-gap-h2 {
     font-size: 30px;
@@ -1452,7 +1466,7 @@ h4.health-info-header {
 
   section.landing-hero.global-padding {
     padding: 30px;
-    height: 500px;
+    height: 670px;
   }
 
   .closing-the-gap-h2 {
