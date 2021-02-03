@@ -37,6 +37,10 @@ a {
   display: none;
 }
 
+.schematic-img-mobile {
+    display: none;
+}
+
 .hs-form * {
   box-sizing: border-box;
   color: #fff !important;
@@ -923,9 +927,17 @@ h4.health-info-header {
     overflow-x: hidden !important;
   }
 
-  .what-we-do {
-    display: none;
+  .schematic-img {
+      display: none;
   }
+
+  .schematic-img-mobile {
+    display: block;
+}
+
+  /* .what-we-do {
+    display: none;
+  } */
 
   #hide-mobile {
     display: none;
