@@ -37,6 +37,11 @@ a {
     display: none;
 }
 
+.hs-form * {
+    box-sizing: border-box;
+    color: #fff !important;
+}
+
 .sub-hero.img-responsive {
     width: 600px;
     position: relative;
@@ -919,12 +924,24 @@ h4.health-info-header {
         overflow-x: hidden !important;
     }
 
+    .what-we-do{
+        display: none;
+    }
+
     #hide-mobile {
         display: none;
     }
 
+    section.landing-hero {
+        background-size: 200px;
+    }
+
     .contact-us-btn {
         display: none;
+    }
+
+    .closing-the-gap-p {
+        padding: 10px;
     }
 
     .logo {
@@ -934,6 +951,10 @@ h4.health-info-header {
     .nav-arrow {
         margin: 8% 15%;
         display: inline-block;
+    }
+
+    .sub-hero.img-responsive {
+        display: none;
     }
 
     .navbar-collapse {
@@ -1059,7 +1080,7 @@ h4.health-info-header {
 
     section.landing-hero.global-padding {
         padding: 30px;
-        height: 450px;
+        height: 500px;
         margin-top: 17%;
     }
 
@@ -1146,7 +1167,7 @@ h4.health-info-header {
 
     section.landing-hero.global-padding {
         padding: 30px;
-        height: 400px;
+        height: 500px;
     }
 
     .closing-the-gap-h2 {
@@ -1408,7 +1429,7 @@ h4.health-info-header {
 
     section.landing-hero.global-padding {
         padding: 30px;
-        height: 400px;
+        height: 500px;
     }
 
     .closing-the-gap-h2 {
@@ -1559,7 +1580,7 @@ h4.health-info-header {
 
     section.landing-hero.global-padding {
         padding: 30px;
-        height: 400px;
+        height: 500px;
     }
 
     .closing-the-gap-h2 {
