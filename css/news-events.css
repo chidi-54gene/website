@@ -14,38 +14,6 @@
 .event-card{
   max-height: 150px;
 }
-/* .pagination{
-  display: flex;
-}
-li.pageNumber{
-  list-style: none;
-}
- .pageNumber a{
-   display: block;
-  line-height: 30px;
-  width: 40px;
-  font-size: 13px;
-  margin-left: 0px;
-  padding-left: 40px;
-  border: 1px solid #F1F2F7;
-  color: white;
- }
-
-.page-active a {
-   background-color: #F1F2F7;
-   color: #4A557D;
- }
-
- .pageNumber .next {
-  display: block;
-  line-height: 30px;
-  width: 40px;
-  font-size: 13px;
-  margin-left: 0px;
-  padding-left: 40px;
-  border: 1px solid #F1F2F7;
-  color: white;
- } */
 
  .pagination {
   display: inline-block;
@@ -90,4 +58,16 @@ h1{
   padding: 10px;
   width: 100%;
   max-width: 660px;
+}
+
+@media( max-width: 575px){
+  .news-section {
+    display: none;
+  }
+}
+
+@media( min-width: 575px){
+  .non-carouse {
+    display: none;
+  }
 }

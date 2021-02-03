@@ -698,13 +698,14 @@ h4.health-info-header {
   letter-spacing: 0;
   line-height: 26px;
   text-align: left;
-  margin-top: 45px;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 .news-icon {
   margin-right: 5px;
   position: relative;
-  top: -2px;
+  top: 25px;
   width: 14px;
 }
 
@@ -715,6 +716,7 @@ h4.health-info-header {
   object-fit: contain;
   min-width: 80px;
   max-width: 80px;
+  margin-left: 27%;
 }
 
 .stay-in-the-news-img {
