@@ -19,6 +19,11 @@
   /* 32px */
 }
 
+.hs-form * {
+  box-sizing: border-box;
+  color: #fff !important;
+}
+
 .contact-header--whistle-blowing::before {
   width: 36px;
   height: 37px;
@@ -45,6 +50,11 @@
   /*25px*/
   color: #000000;
   text-align: left;
+}
+
+.hs-form * {
+  box-sizing: border-box;
+  color: #fff !important;
 }
 
 .muted {
