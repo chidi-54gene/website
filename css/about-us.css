@@ -179,16 +179,20 @@ h6 strong {
 }
 
 .team-card {
-  width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
   background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.team-card:not(.team-card--mini) {
+  width: 100%;
+  height: 100%;
+  display: flex;
   border: 1px solid #d5d9e6;
   box-sizing: content-box;
-  border-radius: 5px;
 }
 
 .team-card:hover {
