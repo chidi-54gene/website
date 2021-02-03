@@ -75,7 +75,7 @@ h6 strong {
   background: #4a557d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 991px) {
   .typography-header--partnership-section {
     background: right 110px top 122px / auto 74% no-repeat
         url("../images/partnership-header-flip.png"),
@@ -129,8 +129,6 @@ h6 strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 253px;
-  min-height: 143px;
   height: 100%;
   background: #ffffff;
   border: 1px solid #f1f2f7;
@@ -142,7 +140,7 @@ h6 strong {
 }
 
 .partner-card__image {
-  max-width: 208px;
+  width: 100%;
   height: auto;
   filter: grayscale(1);
 }

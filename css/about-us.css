@@ -295,6 +295,7 @@ h6 strong {
   color: #f1f2f7;
   text-align: start;
   margin: 0;
+  margin-top: 7.4375rem;
 }
 
 @media (min-width: 768px) {
