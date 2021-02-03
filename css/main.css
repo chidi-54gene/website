@@ -1091,6 +1091,8 @@ h4.health-info-header {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: auto;
+    padding-top: 80px !important;
+    height: 650px;
   }
 
   
@@ -1160,8 +1162,8 @@ h4.health-info-header {
 
 @media only screen and (min-width: 321px) and (max-width: 360px) {
   h1.landing-h1 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 35px;
   }
 
   p.landing-p-1 {
@@ -1178,12 +1180,13 @@ h4.health-info-header {
 
   section.landing-hero.global-padding {
     padding: 30px;
-    height: 500px;
+    height: 675px;
   }
 
   .closing-the-gap-h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
   }
 
   .closing-the-gap-p {
@@ -1227,6 +1230,7 @@ h4.health-info-header {
 
   .closing-the-gap-p {
     text-align: justify;
+    font-weight: 400;
   }
 
   .card-btn-div.text-center {
