@@ -131,10 +131,10 @@ h6 strong {
   align-items: center;
   min-width: 253px;
   min-height: 143px;
+  height: 100%;
   background: #ffffff;
   border: 1px solid #f1f2f7;
   border-radius: 0px 20px;
-  margin-bottom: 40px;
 }
 
 .partner-card:hover {
@@ -144,4 +144,9 @@ h6 strong {
 .partner-card__image {
   max-width: 208px;
   height: auto;
+  filter: grayscale(1);
+}
+
+.partner-card:hover .partner-card__image {
+  filter: initial;
 }
