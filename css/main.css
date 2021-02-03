@@ -33,6 +33,13 @@ a {
   padding: 0px;
 }
 
+.landing-btn:hover {
+    background-color: transparent;
+    color: #4A557D;
+    border: 1px solid #4A557D;
+    line-height: 34px;
+}
+
 #health-info-mobile {
   display: none;
 }
@@ -247,7 +254,7 @@ section.landing-hero {
 .landing-btn {
     background-color: #4A557D;
     color: #FFFFFF;
-    line-height: 30px;
+    line-height: 34px;
 }
 
 p.landing-p-1 {
@@ -937,6 +944,10 @@ h4.health-info-header {
   .schematic-img {
       display: none;
   }
+
+  .col-xs-12.col-sm-12.col-md-6.col-lg-6 {
+    padding: 0px;
+}
 
   .schematic-img-mobile {
     display: block;
