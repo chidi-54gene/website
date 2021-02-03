@@ -56,6 +56,14 @@
     margin: 0px;
 }
 
+.what-we-do {
+    background-image: url(./../assets/img/dark-bg-pattern-full-block.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #f4f6ff;
+}
+
 .research-speed-up {
     background: #F4F6FF;
 }
