@@ -47,6 +47,11 @@
   text-align: left;
 }
 
+.hs-form * {
+  box-sizing: border-box;
+  color: #fff !important;
+}
+
 .muted {
   color: #4a557d !important;
 }

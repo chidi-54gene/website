@@ -946,6 +946,10 @@ h4.health-info-header {
 
     }
 
+    .nav-link.active-green {
+        border-bottom: none;
+    }
+
     .navbar-nav {
         display: -ms-flexbox;
         display: flex;
