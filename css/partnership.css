@@ -20,6 +20,10 @@ h6 strong {
   font-weight: 700;
 }
 
+.partner-div {
+  padding: 0px;
+}
+
 .typography-header--partnership-header h1 {
   font-size: 36px;
   line-height: 50px;
