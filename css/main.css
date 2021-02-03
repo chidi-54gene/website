@@ -935,6 +935,17 @@ h4.health-info-header {
     display: block;
 }
 
+.sub-text-header {
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4a557d;
+}
+
   /* .what-we-do {
     display: none;
   } */
