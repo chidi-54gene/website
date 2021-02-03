@@ -804,7 +804,14 @@ h4.health-info-header {
   text-decoration: underline !important;
 }
 
-@media only screen and (min-width: 411px) and (max-width: 768px) {
+@media (max-width: 412px) {
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 768px) {
   .hero-img {
     display: none;
   }
@@ -838,7 +845,7 @@ h4.health-info-header {
 
   section.landing-hero.global-padding {
     padding: 30px;
-    height: 450px;
+    height: 700px;
   }
 
   h1.landing-h1 {
@@ -1594,6 +1601,11 @@ h4.health-info-header {
 }
 
 @media (max-width: 320px) {
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 700px !important;
+    }
   h1.landing-h1 {
     font-size: 25px;
     line-height: 30px;
