@@ -1087,10 +1087,13 @@ h4.health-info-header {
   }
 
   section.landing-hero.global-padding {
-    padding: 30px;
-    height: 500px;
-    margin-top: 17%;
+    background-image: url(./../assets/img/background-home.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
   }
+
+  
 
   h1.landing-h1 {
     font-size: 30px;
