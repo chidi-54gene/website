@@ -29,12 +29,18 @@ h6 strong {
   /* 36px */
   line-height: 2.75rem;
   /* 44px */
+  margin-bottom: 1.8125rem;
+  /* 29px */
 }
 
 .title-description {
   font-size: 1rem;
   line-height: 25px;
   text-align: start;
+}
+
+.typography-header--about-us .title-description {
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -45,9 +51,26 @@ h6 strong {
   }
 }
 
+@media (min-width: 1400px) {
+  .typography-header--about-us {
+    padding-top: 9.125rem;
+    /* 146px */
+    padding-bottom: 3.875rem;
+    /* 62px */
+  }
+}
+
 @media (min-width: 768px) {
   .about-card {
     width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-card,
+  .mission-section__description {
+    max-width: 33.375rem;
+    /* 534px */
   }
 }
 
@@ -55,7 +78,7 @@ h6 strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5625rem;
+  padding: 0 30px 18px 21px;
   /* 25px */
   mix-blend-mode: normal;
   border-radius: 5px;
@@ -68,6 +91,7 @@ h6 strong {
   /* 25px */
   margin: 0;
   text-align: start;
+  font-weight: 500;
 }
 
 .about-card--pink p {
@@ -75,12 +99,7 @@ h6 strong {
 }
 
 .about-card--pink {
-  border-bottom: 5px solid #f05f87;
-}
-
-.about-card--yellow {
-  background: rgba(162, 171, 200, 0.1);
-  border-bottom: 5px solid #f5bf2f;
+  border-bottom: 7px solid #f05f87;
 }
 
 .mission-section {
@@ -135,6 +154,8 @@ h6 strong {
   font-weight: 400;
   line-height: 25px;
   text-align: start;
+  margin-bottom: 3.125rem;
+  /* 50px */
 }
 
 .btn--purple,
@@ -178,10 +199,46 @@ h6 strong {
   /* 48px */
 }
 
+.team-section {
+  padding-bottom: 0;
+}
+
+.team-section .row,
+.committee-section .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.committee-section .row {
+  margin-bottom: -20px;
+}
+
+.team-section h2,
+.committee-section h2 {
+  margin-top: 10px;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+.committee-card-wrapper,
+.team-card-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.team-card-wrapper {
+  margin-bottom: 110px;
+}
+
+.committee-card-wrapper {
+  margin-bottom: 20px;
+}
+
 .team-card {
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
+  box-sizing: border-box;
   background: #ffffff;
   border-radius: 5px;
   cursor: pointer;
@@ -224,10 +281,9 @@ h6 strong {
 .team-card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 1.25rem 2.125rem;
+  padding: 1rem 2.125rem 1.3125rem;
   /* 20px 34px */
   flex-grow: 1;
 }
@@ -249,7 +305,7 @@ h6 strong {
   font-size: 1rem;
   /* 16px */
   line-height: 1.25;
-  margin-bottom: 2.25rem;
+  margin-bottom: 3rem;
 }
 
 .team-card-body__title,
@@ -364,10 +420,9 @@ h6 strong {
   margin-bottom: 2.75rem;
 }
 
-.committee-section h2 {
-  font-weight: 600;
-  margin: 0;
-  margin-bottom: 70px;
+.committee-section {
+  padding-top: 0;
+  padding-bottom: 10rem !important;
 }
 
 .committee-card,

@@ -1696,25 +1696,31 @@ h4.health-info-header {
 #hambmenu span:nth-child(1) {
   top: 0px;
 }
+
 #hambmenu span:nth-child(2),
 #hambmenu span:nth-child(3) {
   top: 10px;
 }
+
 #hambmenu span:nth-child(4) {
   top: 20px;
 }
+
 #hambmenu.isopen span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
   opacity: 0;
 }
+
 #hambmenu.isopen span:nth-child(2) {
   transform: rotate(45deg);
 }
+
 #hambmenu.isopen span:nth-child(3) {
   transform: rotate(-45deg);
 }
+
 #hambmenu.isopen span:nth-child(4) {
   top: 18px;
   width: 0%;
@@ -1774,6 +1780,7 @@ h4.health-info-header {
   0% {
     transform: translateX(200%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -1783,6 +1790,7 @@ h4.health-info-header {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(200%);
   }
@@ -1793,6 +1801,7 @@ h4.health-info-header {
     transform: translateY(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -1812,6 +1821,7 @@ h4.health-info-header {
     display: none;
   }
 }
+
 @media (min-width: 990px) {
   .left-slidein-view {
     display: none;
@@ -1826,3 +1836,9 @@ h4.health-info-header {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .global-padding {
+    padding-left: 11.25rem;
+    padding-right: 11.25rem;
+  }
+}
