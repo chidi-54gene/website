@@ -1,75 +1,73 @@
-/* .wrapper {
-  max-height: 200px;
-  border: 1px solid #ddd;
-  display: flex;
-} */
-
-.event-card {
-  width: auto;
-  height: fit-content;
-  background: #fff;
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
-  margin: 25px 0px;
+.typography-header-news-events h1 {
+  font-size: 2.25rem;
+  /* 36px */
+  line-height: 2.75rem;
+  /* 44px */
 }
 
-.events-panel {
-  padding: 0px 0px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  min-height: 450px;
-  max-height: 450px;
+.typography-header-news-events {
+  background: right bottom / auto 100% no-repeat
+      url("../images/about-us-header.svg"),
+    #f4f6ff;
 }
 
-.upcoming-events-panel {
-  padding: 0px 0px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  min-height: 450px;
-  max-height: 450px;
+.event-card{
+  max-height: 150px;
 }
 
-#event-image {
-  width: 90%;
-  max-width: 90%;
-  min-width: 90%;
-  max-height: 100px;
-  min-height: 100px;
-  object-fit: cover;
+ .pagination {
+  display: inline-block;
+  margin-left: 10%;
 }
 
-.event-text {
-  height: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
-  position: relative;
+.pagination li {
+  color: white;
+  float: left;
+  padding: 3px 16px;
+  text-decoration: none;
+  border: 1px solid #F1F2F7;
+  margin: 0px 10px;
 }
 
-.event-headline {
-  display: block;
-  /* Fallback for non-webkit */
-  display: -webkit-box;
-  max-width: 400px;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.3rem;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  background-color: #ffffff;
-  color: #54649b;
-  max-height: 40px;
-  position: relative;
-  /* min-height: 40px; */
+.pagination li.active {
+  background-color: #F1F2F7;
+  color: white;
+  color: #4A557D;
 }
 
-@media (max-width: 990px) {
-  .events-panel {
-    min-height: 460px;
-    max-height: 460px;
+.pagination li:hover:not(.active) {background-color: #ddd;}
+
+.wrapper{
+  margin: 60px auto;
+  text-align: center;
+}
+h1{
+  margin-bottom: 1.25em;
+}
+#pagination-demo{
+  display: inline-block;
+  margin-bottom: 1.75em;
+}
+#pagination-demo li{
+  display: inline-block;
+}
+
+.page-content{
+  background: #eee;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  max-width: 660px;
+}
+
+@media( max-width: 575px){
+  .news-section {
+    display: none;
   }
-  .upcoming-events-panel {
-    min-height: 180px;
-    max-height: 460px;
+}
+
+@media( min-width: 575px){
+  .non-carouse {
+    display: none;
   }
 }

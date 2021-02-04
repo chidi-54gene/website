@@ -33,8 +33,19 @@ a {
   padding: 0px;
 }
 
+.landing-btn:hover {
+    background-color: transparent;
+    color: #4A557D;
+    border: 1px solid #4A557D;
+    line-height: 34px;
+}
+
 #health-info-mobile {
   display: none;
+}
+
+.schematic-img-mobile {
+    display: none;
 }
 
 .hs-form * {
@@ -72,6 +83,11 @@ a {
   letter-spacing: 0em;
   text-align: left;
   color: #4a557d;
+}
+
+.schematic-img {
+    /* margin-left: -23px; */
+    width: 1100px;
 }
 
 /* 
@@ -236,8 +252,9 @@ section.landing-hero {
 }
 
 .landing-btn {
-  background-color: #4a557d;
-  color: #ffffff;
+    background-color: #4A557D;
+    color: #FFFFFF;
+    line-height: 34px;
 }
 
 p.landing-p-1 {
@@ -699,13 +716,14 @@ h4.health-info-header {
   letter-spacing: 0;
   line-height: 26px;
   text-align: left;
-  margin-top: 45px;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 .news-icon {
   margin-right: 5px;
   position: relative;
-  top: -2px;
+  top: 25px;
   width: 14px;
 }
 
@@ -716,6 +734,7 @@ h4.health-info-header {
   object-fit: contain;
   min-width: 80px;
   max-width: 80px;
+  margin-left: 27%;
 }
 
 .stay-in-the-news-img {
@@ -795,7 +814,14 @@ h4.health-info-header {
   text-decoration: underline !important;
 }
 
-@media only screen and (min-width: 411px) and (max-width: 768px) {
+@media (max-width: 412px) {
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 700px;
+    }
+}
+
+@media only screen and (min-width: 412px) and (max-width: 768px) {
   .hero-img {
     display: none;
   }
@@ -829,7 +855,7 @@ h4.health-info-header {
 
   section.landing-hero.global-padding {
     padding: 30px;
-    height: 450px;
+    height: 700px;
   }
 
   h1.landing-h1 {
@@ -918,9 +944,36 @@ h4.health-info-header {
     overflow-x: hidden !important;
   }
 
-  .what-we-do {
-    display: none;
+  .schematic-img {
+      display: none;
   }
+
+  .col-xs-12.col-sm-12.col-md-6.col-lg-6 {
+    padding: 0px;
+}
+
+  .schematic-img-mobile {
+    display: block;
+}
+
+.schema-row {
+    margin-top: 40px;
+}
+
+.sub-text-header {
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4a557d;
+}
+
+  /* .what-we-do {
+    display: none;
+  } */
 
   #hide-mobile {
     display: none;
@@ -935,7 +988,7 @@ h4.health-info-header {
   }
 
   .closing-the-gap-p {
-    padding: 10px;
+    padding: 10px 0px;
   }
 
   .logo {
@@ -1071,10 +1124,20 @@ h4.health-info-header {
   }
 
   section.landing-hero.global-padding {
-    padding: 30px;
-    height: 500px;
-    margin-top: 17%;
+    background-image: url(./../assets/img/background-home.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    padding-top: 80px !important;
+    height: 650px;
   }
+
+  .closing-the-gap-h2 {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+}
+  
 
   h1.landing-h1 {
     font-size: 30px;
@@ -1141,8 +1204,8 @@ h4.health-info-header {
 
 @media only screen and (min-width: 321px) and (max-width: 360px) {
   h1.landing-h1 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 35px;
   }
 
   p.landing-p-1 {
@@ -1159,12 +1222,18 @@ h4.health-info-header {
 
   section.landing-hero.global-padding {
     padding: 30px;
-    height: 500px;
+    height: 675px;
   }
 
+  .schematic-img-mobile {
+    display: block;
+    width: 300px;
+}
+
   .closing-the-gap-h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
   }
 
   .closing-the-gap-p {
@@ -1208,6 +1277,7 @@ h4.health-info-header {
 
   .closing-the-gap-p {
     text-align: justify;
+    font-weight: 400;
   }
 
   .card-btn-div.text-center {
@@ -1418,7 +1488,7 @@ h4.health-info-header {
 
   section.landing-hero.global-padding {
     padding: 30px;
-    height: 500px;
+    height: 670px;
   }
 
   .closing-the-gap-h2 {
@@ -1546,6 +1616,11 @@ h4.health-info-header {
 }
 
 @media (max-width: 320px) {
+
+    section.landing-hero.global-padding {
+        padding: 30px;
+        height: 700px !important;
+    }
   h1.landing-h1 {
     font-size: 25px;
     line-height: 30px;

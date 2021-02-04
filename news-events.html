@@ -16,8 +16,10 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/news-events.css" />
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+    <link href="./assets/img/logo-icon@3x.svg" rel="icon">
     <link
       rel="stylesheet"
       type="text/css"
@@ -35,32 +37,84 @@
     <!-- header -->
     <div id="header-page"></div>
 
-    <section class="typography-header" style="padding: 0">
-      <div class="container">
-        <div class="row">
-          <div class="left-01 col-md-5">
-            <h2 style="font-weight: 500">News & Events</h2>
-            <p class="title-description">
-              Catch up on all our latest activities, announcements and reports.
-            </p>
-          </div>
-          <div class="bg-img01 col-md-5">
-            <img src="./images/biobank-img-1.png" height="550px" />
-            <!-- <img src="./images/Pattern-hero.png" height="550px" /> -->
-          </div>
+    <section
+    class="global-padding typography-header typography-header-news-events"
+  >
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 3%; margin-bottom: 3%;">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <h1 class="mt-0">
+            <strong>News & Events</strong>
+          </h1>
+          <p class="title-description">
+            Catch up on all our latest activities, announcements and reports.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="news global-padding text-center">
-      <img src="./assets/img/section-icon-3@3x.svg" class="img-responsive icon-circle" alt="" srcset="">
+      <!-- <img src="./assets/img/section-icon-3@3x.svg" class="img-responsive icon-circle" alt="" srcset=""> -->
       <h2 class="closing-the-gap-h2">54gene in the <span>news</span> </h2>
       
+      <div class="container non-carouse">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="news-div">
+                <img src="./assets/img/wef-logo.png" class="img-responsive" alt="" srcset="">
+                <p class="news-p">
+                    Keeping workers well: A new initiative sets vision for health at work during COVID-19
+                </p>
+                <div style="display: flex;">
+                  <img src="./assets/img/date-icon@3x.svg"  alt="" srcset="" style="margin-top: -32px;" /><p class="new-date" style="margin-left: 10px;"> 23 November 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="news-div">
+                <img src="./assets/img/goog-logo.png" class="img-responsive" alt="" srcset="">
+                <p class="news-p">
+                    Understanding Africa’s $180 billion internet economy future
+                </p>
+                <div style="display: flex;">
+                  <img src="./assets/img/date-icon@3x.svg"  alt="" srcset="" style="margin-top: -32px;" /><p class="new-date" style="margin-left: 10px;"> 23 November 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="news-div">
+                <img src="./assets/img/gen-logo.png" class="img-responsive" alt="" srcset="">
+                <p class="news-p">
+                    Clinical Research Program and COVID-19 Collaboration Launched in Nigeria
+                </p>
+                <div style="display: flex;">
+                  <img src="./assets/img/date-icon@3x.svg"  alt="" srcset="" style="margin-top: -32px;" /><p class="new-date" style="margin-left: 10px;"> 23 November 2020</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="news-div">
+                <img src="./assets/img/va-logo.png" class="img-responsive" alt="" srcset="">
+                <p class="news-p">
+                    54gene founder joins enterpreneur support network endeavor
+                </p>
+                <div style="display: flex; margin-top: -20px;">
+                  <img src="./assets/img/date-icon@3x.svg"  alt="" srcset="" style="margin-top: -32px;" /><p class="new-date" style="margin-left: 10px;"> 23 November 2020</p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
       <div class="news-section">
 
           <div class="container">
 
-            <div class="row simon">
+            <div class="row carouse">
                         
               <div class="col-md-3">
                   <div class="news-div">
@@ -68,7 +122,7 @@
                       <p class="news-p">
                           Keeping workers well: A new initiative sets vision for health at work during COVID-19
                       </p>
-                      <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 23 November 2020</p>
+                      <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 23 November 2020</p>
                   </div>
               </div>
 
@@ -78,7 +132,7 @@
                       <p class="news-p">
                           Understanding Africa’s $180 billion internet economy future
                       </p>
-                      <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 11 November 2020</p>
+                      <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 11 November 2020</p>
                   </div>
               </div>
 
@@ -88,7 +142,7 @@
                       <p class="news-p">
                           Clinical Research Program and COVID-19 Collaboration Launched in Nigeria
                       </p>
-                      <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 28 October 2020</p>
+                      <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 28 October 2020</p>
                   </div>
               </div>
 
@@ -98,7 +152,7 @@
                       <p class="news-p">
                           54gene founder joins enterpreneur support network endeavor
                       </p>
-                      <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 22 September 2020</p>
+                      <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 22 September 2020</p>
                   </div>
               </div>
 
@@ -108,7 +162,7 @@
                     <p class="news-p">
                         Keeping workers well: A new initiative sets vision for health at work during COVID-19
                     </p>
-                    <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 23 November 2020</p>
+                    <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 23 November 2020</p>
                 </div>
             </div>
 
@@ -118,7 +172,7 @@
                     <p class="news-p">
                         Understanding Africa’s $180 billion internet economy future
                     </p>
-                    <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 11 November 2020</p>
+                    <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 11 November 2020</p>
                 </div>
             </div>
 
@@ -128,7 +182,7 @@
                     <p class="news-p">
                         Clinical Research Program and COVID-19 Collaboration Launched in Nigeria
                     </p>
-                    <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 28 October 2020</p>
+                    <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 28 October 2020</p>
                 </div>
             </div>
 
@@ -138,7 +192,7 @@
                     <p class="news-p">
                         54gene founder joins enterpreneur support network endeavor
                     </p>
-                    <p class="new-date"> <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset=""> 22 September 2020</p>
+                    <img src="./assets/img/date-icon@3x.svg" class="img-responsive news-icon" alt="" srcset="" /><p class="new-date"> 22 September 2020</p>
                 </div>
             </div>
               
@@ -146,12 +200,12 @@
         </div>
 
       </div>
+
 </section>
 
-<section class="typography-body" style="background: url('./images/biobank-bg-img2.png');">
-  <!-- <div class="container"> -->
-    <img src="./images/diversity01.svg" class="third-div-icon" style="margin-top: 5%;"/>
-    <h2 style="text-align: center; color: white; font-weight: 700; margin-top: -1%;">Our Events</h2>
+<section class="typography-body" style="background: url('./images/biobank-bg-img2.png'); padding-bottom: 5%; padding-top: 3%;">
+  <div class="container-fluid">
+    <h2 style="text-align: center; color: white; font-weight: 500;">Our Events</h2>
     <!-- <div class="row" style="margin: auto;">
       <div class="col-md-12">
         <div class="card" style="max-width: 320px; height: 120px; margin: auto;">
@@ -160,89 +214,82 @@
       </div>
     </div> -->
     <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <div class="events-panel">
-          <div class="event-card" data-toggle="modal" data-target="#54gene_Webinar" style="cursor:pointer; border-radius: 7px;">
-            <div class="d-flex">
-              <div class="col-md-4 pr-0 pl-0">
-                <img src="images/Personalized_Artwork_Dr Abasi.jpeg" data-toggle="modal" data-target="Africa_Tech_Summit"
-                  alt="STEM Talk Series" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;" id="event-image">
-              </div>
-              <div class="col-md-8 event-text pr-0 pl-0" style="padding: 0.2rem;">
-                <div class="event-headline body-font">
-                  Art of Technology Lagos 2.0</div>
-                  <!-- <div style="display: flex;">
-                    <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                      <a style="font-size: 14px;">3rd - 4th December, 2020</a></div>
-                    <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                        style="font-size: 14px;">Oriental Hotel</a></div>
-                  </div> -->
-
-                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                    <a style="font-size: 14px;">3rd - 4th December, 2020</a></div>
-                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                      style="font-size: 14px;">Oriental Hotel</a></div>
-              </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-6" style="padding-left: 5%; padding-right: 5%;">
+        <div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
+          <div class="row g-0">
+            <div class="col-md-4" style="padding: 0px;">
+              <img src="images/Personalized_Artwork_Dr Abasi.jpeg" class="img-fluid" alt="...">
             </div>
-          </div>
-    
-          <div class="event-card" data-toggle="modal" data-target="#54gene_Webinar" style="cursor:pointer; border-radius: 7px;">
-            <div class="d-flex">
-              <div class="col-md-4 pr-0 pl-0">
-                <img src="images/Personalized_Artwork_Dr Abasi.jpeg" data-toggle="modal" data-target="Africa_Tech_Summit"
-                  alt="STEM Talk Series" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;" id="event-image">
-              </div>
-              <div class="col-md-8 event-text pr-0 pl-0" style="padding: 0.2rem;">
-                <div class="event-headline body-font">
-                  Art of Technology Lagos 2.0</div>
-                  <!-- <div style="display: flex;">
-                    <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                      <a style="font-size: 14px;">3rd - 4th December, 2020</a></div>
-                    <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                        style="font-size: 14px;">Oriental Hotel</a></div>
-                  </div> -->
-
+            <div class="col-md-8">
+              <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
+                <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;">54gene Webinar Series: The bountiful opportunities that exist within 
+                  the health technology industry today</p>
+                <div style="display: flex; margin-top: 0px;">
                   <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                    <a style="font-size: 14px;">3rd - 4th December, 2020</a></div>
+                    <a style="font-size: 10px; margin-right: 10px;">3rd - 4th December, 2020</a></div>
                   <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                      style="font-size: 14px;">Oriental Hotel</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="event-card" data-toggle="modal" data-target="#54gene_Webinar" style="cursor:pointer; border-radius: 7px;">
-            <div class="d-flex">
-              <div class="col-md-4 pr-0 pl-0">
-                <img src="images/Personalized_Artwork_Dr Abasi.jpeg" data-toggle="modal" data-target="Africa_Tech_Summit"
-                  alt="STEM Talk Series" style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;" id="event-image">
-              </div>
-              <div class="col-md-8 event-text pr-0 pl-0" style="padding: 0.2rem;">
-                <div class="event-headline body-font">
-                  Art of Technology Lagos 2.0</div>
-                  <!-- <div style="display: flex;">
-                    <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                      <a style="font-size: 14px;">3rd - 4th December, 2020</a></div>
-                    <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                        style="font-size: 14px;">Oriental Hotel</a></div>
-                  </div> -->
-
-                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                    <a style="font-size: 14px;">3rd - 4th December, 2020</a></div>
-                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                      style="font-size: 14px;">Oriental Hotel</a></div>
+                      style="font-size: 10px;">Oriental Hotel</a></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
+          <div class="row g-0">
+            <div class="col-md-4" style="padding: 0px;">
+              <img src="images/Personalized_Artwork_Dr Abasi.jpeg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
+                <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;">54gene Webinar Series: The bountiful opportunities that exist within 
+                  the health technology industry today</p>
+                <div style="display: flex; margin-top: 0px;">
+                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
+                    <a style="font-size: 10px; margin-right: 10px;">3rd - 4th December, 2020</a></div>
+                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
+                      style="font-size: 10px;">Oriental Hotel</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
+          <div class="row g-0">
+            <div class="col-md-4" style="padding: 0px;">
+              <img src="images/Personalized_Artwork_Dr Abasi.jpeg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
+                <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;">54gene Webinar Series: The bountiful opportunities that exist within 
+                  the health technology industry today</p>
+                <div style="display: flex; margin-top: 0px;">
+                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
+                    <a style="font-size: 10px; margin-right: 10px;">3rd - 4th December, 2020</a></div>
+                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
+                      style="font-size: 10px;">Oriental Hotel</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="pagination">
+          <li id="prev" href="#">&laquo;</li>
+          <li class="pageNumber active" href="#">1</li>
+          <li class="pageNumber " href="#">2</li>
+          <li class="pageNumber " href="#">3</li>
+          <li class="pageNumber " href="#">4</li>
+          <li class="pageNumber " href="#">5</li>
+          <li id="next" href="#">&raquo;</li>
+        </div> -->
+        
       </div>
-      <div class="col-md-4"></div>
+      <div class="col-md-3"></div>
     </div>
 
-  <!-- </div> -->
-  <!-- <div class="container">
-   
-  </div> -->
+  </div>
 </section>
 
     <!-- footer -->
@@ -260,7 +307,25 @@
     <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-      $('.simon').slick({
+      $(document).ready(function(){
+        $('#next').click(function(){
+          if($('.pagination').find('.pageNumber .active')){
+            alert('found');
+            let next = $('.pagination').find('.pageNumber .active').next();
+            console.log(next);
+            next.addClass('active');
+          }
+          // 
+        })
+        $('#prev').click(function(){
+          alert('prev')
+          $('.pagination').find('.pageNumber .active').next().removeClass('active')
+        })
+      });
+    </script>
+
+    <script type="text/javascript">
+      $('.carouse').slick({
       dots: true,
       infinite: true,
       speed: 300,
@@ -268,7 +333,7 @@
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -277,7 +342,15 @@
         }
         },
         {
-          breakpoint: 600,
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            arrows: false
+          }
+        },
+        {
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -285,15 +358,7 @@
           }
         },
         {
-          breakpoint: 580,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            arrows: false
-          }
-        },
-        {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
