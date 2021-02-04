@@ -478,7 +478,8 @@ img.img-responsive.hero-img {
 }
 
 footer.footer.global-padding {
-  background-color: #252939;
+  background: bottom / 100% auto no-repeat url("../images/colour-bar.svg"),
+    #252939;
   padding-bottom: 120px;
 }
 
@@ -1023,7 +1024,8 @@ h4.health-info-header {
   }
 
   footer.footer.global-padding {
-    background-color: #252939;
+    background: bottom / 100% auto no-repeat url("../images/colour-bar.svg"),
+      #252939;
     padding-bottom: 30px;
   }
 
