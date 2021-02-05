@@ -65,7 +65,7 @@
   background-color: #4a557d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .contact-form-section {
     min-height: calc(100vh - 80px);
     /* 1440px */
