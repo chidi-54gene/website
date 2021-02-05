@@ -33,6 +33,11 @@ a {
   padding: 0px;
 }
 
+.main-container {
+    max-width: 1500px;
+    margin: auto;
+}
+
 .landing-btn:hover {
     background-color: transparent;
     color: #4A557D;
@@ -443,8 +448,8 @@ img.img-responsive.hero-img {
   font-weight: 300;
   letter-spacing: 0;
   line-height: 30px;
-  text-align: left;
-  padding-left: 100px;
+  text-align: center;
+  /* padding-left: 100px; */
   margin-top: 20px;
 }
 
@@ -1918,4 +1923,26 @@ h4.health-info-header {
     padding-left: 11.25rem;
     padding-right: 11.25rem;
   }
+}
+
+
+@media (min-width: 1500px ) {
+    .sub-hero.img-responsive {
+        width: 650px;
+        position: relative;
+        right: 224px;
+    }
+
+    .img-responsive.hero-img {
+        width: 650px !important;
+        position: relative;
+        top: 70px !important;
+        z-index: 1;
+        left: 250px !important;
+    }
+
+    .schematic-img {
+        margin-left: 40px;
+        width: 1100px;
+    }
 }
