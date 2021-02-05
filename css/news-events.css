@@ -11,6 +11,19 @@
     #f4f6ff;
 }
 
+.news-events-bg h1 {
+  font-size: 2.25rem;
+  /* 36px */
+  line-height: 2.75rem;
+  /* 44px */
+}
+
+.news-events-bg {
+  background: right bottom / auto 100% no-repeat
+      url("../images/about-us-header.svg"),
+      #4A557D;
+}
+
 .event-card{
   max-height: 150px;
 }
