@@ -1928,7 +1928,7 @@ h4.health-info-header {
 
 @media (min-width: 1500px ) {
     .sub-hero.img-responsive {
-        width: 650px;
+        width: 700px;
         position: relative;
         right: 224px;
     }
@@ -1949,4 +1949,8 @@ h4.health-info-header {
     footer .col-xs-12.col-sm-12.col-md-3.col-lg-3 {
         padding: 0px;
     }
+
+    footer .container {
+      max-width: 1500px;
+  }
 }
