@@ -34,10 +34,10 @@ a {
 }
 
 .landing-btn:hover {
-    background-color: transparent;
-    color: #4A557D;
-    border: 1px solid #4A557D;
-    line-height: 34px;
+  background-color: transparent;
+  color: #4a557d;
+  border: 1px solid #4a557d;
+  line-height: 34px;
 }
 
 #health-info-mobile {
@@ -45,7 +45,7 @@ a {
 }
 
 .schematic-img-mobile {
-    display: none;
+  display: none;
 }
 
 .hs-form * {
@@ -86,8 +86,8 @@ a {
 }
 
 .schematic-img {
-    /* margin-left: -23px; */
-    width: 1100px;
+  /* margin-left: -23px; */
+  width: 1100px;
 }
 
 /* 
@@ -232,8 +232,6 @@ nav.navbar.navbar-expand-lg {
   line-height: 25px;
   text-align: center;
   border-bottom: 2px solid #f05f87;
-  position: absolute;
-  right: 135px;
 }
 
 .dropdown-toggle::after {
@@ -252,9 +250,9 @@ section.landing-hero {
 }
 
 .landing-btn {
-    background-color: #4A557D;
-    color: #FFFFFF;
-    line-height: 34px;
+  background-color: #4a557d;
+  color: #ffffff;
+  line-height: 34px;
 }
 
 p.landing-p-1 {
@@ -495,7 +493,8 @@ img.img-responsive.hero-img {
 }
 
 footer.footer.global-padding {
-  background-color: #252939;
+  background: bottom / 100% auto no-repeat url("../images/colour-bar.svg"),
+    #252939;
   padding-bottom: 120px;
 }
 
@@ -814,10 +813,10 @@ h4.health-info-header {
 }
 
 @media (max-width: 412px) {
-    section.landing-hero.global-padding {
-        padding: 30px;
-        height: 700px;
-    }
+  section.landing-hero.global-padding {
+    padding: 30px;
+    height: 700px;
+  }
 }
 
 @media only screen and (min-width: 412px) and (max-width: 768px) {
@@ -944,22 +943,22 @@ h4.health-info-header {
   }
 
   .schematic-img {
-      display: none;
+    display: none;
   }
 
   .col-xs-12.col-sm-12.col-md-6.col-lg-6 {
     padding: 0px;
-}
+  }
 
   .schematic-img-mobile {
     display: block;
-}
+  }
 
-.schema-row {
+  .schema-row {
     margin-top: 40px;
-}
+  }
 
-.sub-text-header {
+  .sub-text-header {
     font-family: Manrope;
     font-size: 18px;
     font-style: normal;
@@ -968,7 +967,7 @@ h4.health-info-header {
     letter-spacing: 0em;
     text-align: left;
     color: #4a557d;
-}
+  }
 
   /* .what-we-do {
     display: none;
@@ -1076,7 +1075,8 @@ h4.health-info-header {
   }
 
   footer.footer.global-padding {
-    background-color: #252939;
+    background: bottom / 100% auto no-repeat url("../images/colour-bar.svg"),
+      #252939;
     padding-bottom: 30px;
   }
 
@@ -1134,8 +1134,7 @@ h4.health-info-header {
     font-size: 30px;
     line-height: 35px;
     text-align: left;
-}
-  
+  }
 
   h1.landing-h1 {
     font-size: 30px;
@@ -1226,7 +1225,7 @@ h4.health-info-header {
   .schematic-img-mobile {
     display: block;
     width: 300px;
-}
+  }
 
   .closing-the-gap-h2 {
     font-size: 30px;
@@ -1614,11 +1613,11 @@ h4.health-info-header {
 }
 
 @media (max-width: 320px) {
+  section.landing-hero.global-padding {
+    padding: 30px;
+    height: 700px !important;
+  }
 
-    section.landing-hero.global-padding {
-        padding: 30px;
-        height: 700px !important;
-    }
   h1.landing-h1 {
     font-size: 25px;
     line-height: 30px;
@@ -1771,25 +1770,31 @@ h4.health-info-header {
 #hambmenu span:nth-child(1) {
   top: 0px;
 }
+
 #hambmenu span:nth-child(2),
 #hambmenu span:nth-child(3) {
   top: 10px;
 }
+
 #hambmenu span:nth-child(4) {
   top: 20px;
 }
+
 #hambmenu.isopen span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
   opacity: 0;
 }
+
 #hambmenu.isopen span:nth-child(2) {
   transform: rotate(45deg);
 }
+
 #hambmenu.isopen span:nth-child(3) {
   transform: rotate(-45deg);
 }
+
 #hambmenu.isopen span:nth-child(4) {
   top: 18px;
   width: 0%;
@@ -1849,6 +1854,7 @@ h4.health-info-header {
   0% {
     transform: translateX(200%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -1858,6 +1864,7 @@ h4.health-info-header {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(200%);
   }
@@ -1868,6 +1875,7 @@ h4.health-info-header {
     transform: translateY(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -1887,6 +1895,7 @@ h4.health-info-header {
     display: none;
   }
 }
+
 @media (min-width: 990px) {
   .left-slidein-view {
     display: none;
@@ -1901,3 +1910,10 @@ h4.health-info-header {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  nav.navbar.navbar-expand-lg,
+  .global-padding {
+    padding-left: 11.25rem;
+    padding-right: 11.25rem;
+  }
+}

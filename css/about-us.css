@@ -29,12 +29,18 @@ h6 strong {
   /* 36px */
   line-height: 2.75rem;
   /* 44px */
+  margin-bottom: 1.8125rem;
+  /* 29px */
 }
 
 .title-description {
   font-size: 1rem;
   line-height: 25px;
   text-align: start;
+}
+
+.typography-header--about-us .title-description {
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -45,9 +51,26 @@ h6 strong {
   }
 }
 
+@media (min-width: 1400px) {
+  .typography-header--about-us {
+    padding-top: 9.125rem;
+    /* 146px */
+    padding-bottom: 3.875rem;
+    /* 62px */
+  }
+}
+
 @media (min-width: 768px) {
   .about-card {
     width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about-card,
+  .mission-section__description {
+    max-width: 33.375rem;
+    /* 534px */
   }
 }
 
@@ -55,7 +78,7 @@ h6 strong {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5625rem;
+  padding: 0 30px 18px 21px;
   /* 25px */
   mix-blend-mode: normal;
   border-radius: 5px;
@@ -68,6 +91,7 @@ h6 strong {
   /* 25px */
   margin: 0;
   text-align: start;
+  font-weight: 500;
 }
 
 .about-card--pink p {
@@ -75,12 +99,7 @@ h6 strong {
 }
 
 .about-card--pink {
-  border-bottom: 5px solid #f05f87;
-}
-
-.about-card--yellow {
-  background: rgba(162, 171, 200, 0.1);
-  border-bottom: 5px solid #f5bf2f;
+  border-bottom: 7px solid #f05f87;
 }
 
 .mission-section {
@@ -135,6 +154,8 @@ h6 strong {
   font-weight: 400;
   line-height: 25px;
   text-align: start;
+  margin-bottom: 3.125rem;
+  /* 50px */
 }
 
 .btn--purple,
@@ -178,10 +199,46 @@ h6 strong {
   /* 48px */
 }
 
+.team-section {
+  padding-bottom: 0;
+}
+
+.team-section .row,
+.committee-section .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.committee-section .row {
+  margin-bottom: -20px;
+}
+
+.team-section h2,
+.committee-section h2 {
+  margin-top: 10px;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+
+.committee-card-wrapper,
+.team-card-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.team-card-wrapper {
+  margin-bottom: 110px;
+}
+
+.committee-card-wrapper {
+  margin-bottom: 20px;
+}
+
 .team-card {
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
+  box-sizing: border-box;
   background: #ffffff;
   border-radius: 5px;
   cursor: pointer;
@@ -224,10 +281,9 @@ h6 strong {
 .team-card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 1.25rem 2.125rem;
+  padding: 1rem 2.125rem 1.3125rem;
   /* 20px 34px */
   flex-grow: 1;
 }
@@ -249,6 +305,7 @@ h6 strong {
   font-size: 1rem;
   /* 16px */
   line-height: 1.25;
+  margin-bottom: 3rem;
 }
 
 .team-card-body__title,
@@ -370,23 +427,86 @@ h6 strong {
   margin-bottom: 2.75rem;
 }
 
-.green-butt {
-  width: 100%;
-  background: #65ba59;
-  height: 6px;
-  border-radius: 0px 0px 5px 5px;
+.committee-section {
+  padding-top: 0;
+  padding-bottom: 10rem !important;
 }
 
-.yellow-butt {
-  width: 100%;
-  background: #f5bf2f;
-  height: 6px;
-  border-radius: 0px 0px 5px 5px;
+.committee-card,
+.committee-card-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.red-butt {
-  width: 100%;
-  background: #f05f87;
-  height: 6px;
-  border-radius: 0px 0px 5px 5px;
+.committee-card {
+  height: 100%;
+  padding: 10px;
+  padding-left: 14px;
+  background: #ffffff;
+  border: 1px solid #d5d9e6;
+  border-radius: 5px;
+}
+
+.committee-card__title {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 44px;
+  text-align: center;
+  color: #252939;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.committee-card-list {
+  list-style: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+.committee-card-list__item {
+  padding: 0 !important;
+  display: inline-flex;
+  font-family: Manrope;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: start;
+  color: #000000;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.committee-card-list__item::before {
+  display: inline-block;
+  content: "";
+  min-width: 34px;
+  height: 22px;
+  background-position: left center;
+  background-size: 14px 15px;
+  background-repeat: no-repeat;
+}
+
+.committee-card--green {
+  border-bottom: 6px solid #65ba59;
+}
+
+.committee-card--green .committee-card-list__item::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.81505 2.09481C2.01557 0.959359 3.1321 0.228195 4.25304 0.498276L12.1846 2.40931C13.2067 2.65558 13.8637 3.65122 13.688 4.68782L12.2914 12.9296C12.1004 14.0563 11.0058 14.7943 9.88962 14.5487L1.87325 12.7845C0.826251 12.5541 0.147135 11.5391 0.333578 10.4834L1.81505 2.09481Z' fill='%2381C677'/%3E%3C/svg%3E%0A");
+}
+
+.committee-card--yellow {
+  border-bottom: 6px solid #f5bf2f;
+}
+
+.committee-card--yellow .committee-card-list__item::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.81505 2.09481C2.01557 0.959359 3.1321 0.228195 4.25304 0.498276L12.1846 2.40931C13.2067 2.65558 13.8637 3.65122 13.688 4.68782L12.2914 12.9296C12.1004 14.0563 11.0058 14.7943 9.88962 14.5487L1.87325 12.7845C0.826251 12.5541 0.147135 11.5391 0.333578 10.4834L1.81505 2.09481Z' fill='%23F5BF2F'/%3E%3C/svg%3E%0A");
+}
+
+.committee-card--pink {
+  border-bottom: 6px solid #f05f87;
+}
+
+.committee-card--pink .committee-card-list__item::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.81505 2.09481C2.01557 0.959359 3.1321 0.228195 4.25304 0.498276L12.1846 2.40931C13.2067 2.65558 13.8637 3.65122 13.688 4.68782L12.2914 12.9296C12.1004 14.0563 11.0058 14.7943 9.88962 14.5487L1.87325 12.7845C0.826251 12.5541 0.147135 11.5391 0.333578 10.4834L1.81505 2.09481Z' fill='%23F05F87'/%3E%3C/svg%3E%0A");
 }
