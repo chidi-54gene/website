@@ -55,6 +55,7 @@ p {
 a {
   color: #81c677;
   text-decoration: underline;
+  font-weight: 500;
 }
 a:hover {
   color: #81c677;
