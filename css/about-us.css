@@ -402,10 +402,17 @@ h6 strong {
   color: #000000;
 }
 
-.profile-modal-header__title,
-.profile-modal-body p {
+.profile-modal-header__title {
   font-size: 0.8125rem;
   line-height: 1.25rem;
+  color: #000000;
+  margin-bottom: 0;
+  text-align: start;
+}
+
+.profile-modal-body p {
+  font-size: 14px;
+  line-height: 25px;
   color: #000000;
   margin-bottom: 0;
   text-align: start;
