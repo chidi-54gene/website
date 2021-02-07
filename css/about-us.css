@@ -511,3 +511,9 @@ h6 strong {
 .committee-card--pink .committee-card-list__item::before {
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.81505 2.09481C2.01557 0.959359 3.1321 0.228195 4.25304 0.498276L12.1846 2.40931C13.2067 2.65558 13.8637 3.65122 13.688 4.68782L12.2914 12.9296C12.1004 14.0563 11.0058 14.7943 9.88962 14.5487L1.87325 12.7845C0.826251 12.5541 0.147135 11.5391 0.333578 10.4834L1.81505 2.09481Z' fill='%23F05F87'/%3E%3C/svg%3E%0A");
 }
+
+@media (min-width: 1500px) {
+  .main-container-title{
+    max-width: 1200px;
+  }
+}
