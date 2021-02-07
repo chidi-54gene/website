@@ -24,9 +24,7 @@ deploy_master:
   stage: deploy
   image: registry.gitlab.com/gitlab-examples/kubernetes-deploy
   environment:
-    name: Production
-  only:
-    kubernetes: active
+    name: Development
   script: 
     - kubectl version
   
@@ -36,11 +34,11 @@ deploy_master:
     - git config --global user.email "tech@54gene.com"
     - git config --global user.name "54gene"
 
-    - sed -i "s@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:[a-z0-9]*@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:${CI_COMMIT_SHORT_SHA}@g" website/master/deployment.yaml
-    - kubectl apply -k website/master
+    - sed -i "s@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:[a-z0-9]*@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:${CI_COMMIT_SHORT_SHA}@g" website/new-dev/deployment.yaml
+    - kubectl apply -k website/new-dev
 
     - git add --all 
-    - git commit -m "Updated Website-Master images to $CI_COMMIT_SHORT_SHA"
+    - git commit -m "Updated Website-new-dev images to $CI_COMMIT_SHORT_SHA"
     - git push
   only:
     - master
