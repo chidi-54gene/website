@@ -796,11 +796,14 @@ h4.health-info-header {
   /* border-radius: 3px 0 0 3px; */
   background-color: #4a557d;
   width: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .email-input {
   border: 1px solid #d2d7e6;
-  border-radius: 3px;
+  border-radius: 0;
   background-color: #ffffff;
   font-size: 12px;
   padding: 16px;
@@ -1961,4 +1964,25 @@ h4.health-info-header {
 #mce-responses .response {
   font-weight: 300;
   font-size: 11px;
+}
+
+#mc_embed_signup input.mce_inline_error {
+  border-color: #f05f87 !important;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  margin: 0 !important;
+  display: flex;
+  align-items: center !important;
+  padding: 5px 10px;
+  background-color: #f05f87 !important;
+  font-weight: bold;
+  z-index: 1;
+  color: #fff;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+}
+
+.mce_inline_error + .input-group-append {
+  display: none;
 }
