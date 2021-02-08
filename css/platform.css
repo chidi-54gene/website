@@ -145,7 +145,7 @@
   padding-bottom: 4.3125rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .platform-section {
     background: right 143px top 30px / 32% auto no-repeat
       url("../images/Group\ 176.png");
