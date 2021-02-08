@@ -793,7 +793,7 @@ h4.health-info-header {
 }
 
 .btn-know {
-  /* border-radius: 3px 0 0 3px; */
+  border-radius: 0;
   background-color: #4a557d;
   width: 27px;
   display: flex;
@@ -808,6 +808,11 @@ h4.health-info-header {
   font-size: 12px;
   padding: 16px;
   height: 38px;
+}
+
+.email-input:focus {
+  box-shadow: none;
+  border-color: #252939;
 }
 
 .stay-in-the-know-img {
