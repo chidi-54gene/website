@@ -195,7 +195,7 @@
 }
 
 .join-team-section {
-  background: url("../images/join-our-team-section.png") no-repeat right,
+  background: url("../images/footer.png") no-repeat right,
     #4a557d;
   background-size: auto 100%;
   padding-top: 3.75rem;
@@ -245,6 +245,11 @@
   border: 1px solid #81c677;
 }
 
+@media(max-width: 1024px){
+  .join-team-highlight{
+    color: #81c677;
+  }
+}
 
 .btn--margin-top.btn--green {
   margin-top: 3rem;
