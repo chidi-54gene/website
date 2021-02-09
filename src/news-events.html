@@ -216,8 +216,8 @@
       </div>
     </div> -->
     <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6" style="padding-left: 5%; padding-right: 5%;">
+      <div class="col-md-2"></div>
+      <div class="col-md-8" style="padding-left: 5%; padding-right: 5%;">
 
         <div id="news-append"></div>
         <!-- <div class="pagination">
@@ -231,7 +231,7 @@
         </div> -->
         
       </div>
-      <div class="col-md-3"></div>
+      <div class="col-md-2"></div>
     </div>
 
   </div>
@@ -334,18 +334,27 @@
                 // console.log(response.data);
                 $.each(response.data, function(index, events){
 
-                  var content = `<div class="card mb-5" style="max-width: 900px; margin-top: 5%;">
+
+                  var info;
+
+                  if (events.additonal_info != null) {
+                      info = events.additonal_info.substring(0,100)+"...";
+                  }else{
+                    info = "Not available";
+                  }
+
+                  var content = `<div class="card mb-5 events-card" style="max-width: 900px; margin-top: 5%;">
                                   <div class="row g-0">
                                     <div class="col-md-4" style="padding: 0px;">
                                       <img src="${events.image}" class="img-fluid" alt="...">
                                     </div>
                                     <div class="col-md-8">
                                       <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
-                                        <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;"><b>${events.title}:</b> <br>${events.additonal_info}</p>
+                                        <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;"><b>${events.title}:</b> <br>${info}</p>
                                         <div style="display: flex; margin-top: 0px;">
-                                          <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
+                                          <div class="mt-3"><img src="images/time.svg" class="mr-2"></img>
                                             <a style="font-size: 10px; margin-right: 10px;">${events.start_date} - ${events.end_date}</a></div>
-                                          <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
+                                          <div class="mt-3"><img src="images/location.svg" class="mr-2"></img><a
                                               style="font-size: 10px;">${events.location}</a></div>
                                         </div>
                                       </div>
