@@ -54,6 +54,8 @@
     </div>
   </section>
 
+  
+
     <section class="news global-padding text-center">
       <!-- <img src="./assets/img/section-icon-3@3x.svg" class="img-responsive icon-circle" alt="" srcset=""> -->
       <h2 class="closing-the-gap-h2 text-center">54gene in the <span>news</span> </h2>
@@ -216,65 +218,8 @@
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6" style="padding-left: 5%; padding-right: 5%;">
-        <div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
-          <div class="row g-0">
-            <div class="col-md-4" style="padding: 0px;">
-              <img src="images/Personalized_Artwork_Dr Abasi.jpeg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
-                <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;">54gene Webinar Series: The bountiful opportunities that exist within 
-                  the health technology industry today</p>
-                <div style="display: flex; margin-top: 0px;">
-                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                    <a style="font-size: 10px; margin-right: 10px;">3rd - 4th December, 2020</a></div>
-                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                      style="font-size: 10px;">Oriental Hotel</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
-          <div class="row g-0">
-            <div class="col-md-4" style="padding: 0px;">
-              <img src="images/Personalized_Artwork_Dr Abasi.jpeg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
-                <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;">54gene Webinar Series: The bountiful opportunities that exist within 
-                  the health technology industry today</p>
-                <div style="display: flex; margin-top: 0px;">
-                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                    <a style="font-size: 10px; margin-right: 10px;">3rd - 4th December, 2020</a></div>
-                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                      style="font-size: 10px;">Oriental Hotel</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
-          <div class="row g-0">
-            <div class="col-md-4" style="padding: 0px;">
-              <img src="images/Personalized_Artwork_Dr Abasi.jpeg" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
-                <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;">54gene Webinar Series: The bountiful opportunities that exist within 
-                  the health technology industry today</p>
-                <div style="display: flex; margin-top: 0px;">
-                  <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
-                    <a style="font-size: 10px; margin-right: 10px;">3rd - 4th December, 2020</a></div>
-                  <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
-                      style="font-size: 10px;">Oriental Hotel</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div id="news-append"></div>
         <!-- <div class="pagination">
           <li id="prev" href="#">&laquo;</li>
           <li class="pageNumber active" href="#">1</li>
@@ -377,6 +322,44 @@
     </script>
     <script>
       $("#footer-page").load("footer.html");
+    </script>
+
+    <script>
+        $.ajax({    //create an ajax request to display.php
+          type: "GET",
+          url: "https://api2.54gene.com/api/v1/events/all",             
+          // dataType: "html",                
+          success: function(response){                    
+              // $("#responsecontainer").html(response); 
+                // console.log(response.data);
+                $.each(response.data, function(index, events){
+
+                  var content = `<div class="card mb-3" style="max-width: 700px; margin-top: 5%;">
+                                  <div class="row g-0">
+                                    <div class="col-md-4" style="padding: 0px;">
+                                      <img src="${events.image}" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
+                                        <p style="margin-top: 5%; margin-bottom: 10%; font-size: 13px;"><b>${events.title}:</b> <br>${events.additonal_info}</p>
+                                        <div style="display: flex; margin-top: 0px;">
+                                          <div class="mt-2"><img src="images/time.svg" class="mr-2"></img>
+                                            <a style="font-size: 10px; margin-right: 10px;">${events.start_date} - ${events.end_date}</a></div>
+                                          <div class="mt-2"><img src="images/location.svg" class="mr-2"></img><a
+                                              style="font-size: 10px;">${events.location}</a></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>`;
+
+                  $("#news-append").append(content);
+                  // console.log(content);
+
+                });
+          }
+
+        });
     </script>
   </body>
 </html>
