@@ -1,0 +1,87 @@
+stages:
+  - publish
+  - deploy
+publish_master:
+  # Official docker image.
+  image: docker:latest
+  stage: publish
+  services:
+    - docker:dind
+  
+  before_script:
+    - apk add --no-cache groff less bash jq curl py-pip tzdata
+    - pip install awscli
+    
+  
+  script:
+    - $(aws ecr get-login --no-include-email --region us-east-2)
+    - docker build -t $REPOSITORY_URL:$CI_COMMIT_SHORT_SHA .
+    - docker push $REPOSITORY_URL:$CI_COMMIT_SHORT_SHA
+  only:
+    - master
+
+deploy_master:
+  stage: deploy
+  image: registry.gitlab.com/gitlab-examples/kubernetes-deploy
+  environment:
+    name: Production
+  script: 
+    - kubectl version
+  
+    - git clone https://54gene:$PASSWORD@gitlab.com/54genedevelopers/54gene-deployment.git kubernetes
+    - cd kubernetes
+
+    - git config --global user.email "tech@54gene.com"
+    - git config --global user.name "54gene"
+
+    - sed -i "s@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:[a-z0-9]*@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:${CI_COMMIT_SHORT_SHA}@g" website/master/deployment.yaml
+    - kubectl apply -k website/master
+
+    - git add --all 
+    - git commit -m "Updated Website-master images to $CI_COMMIT_SHORT_SHA"
+    - git push
+  only:
+    - master
+
+publish:
+  # Official docker image.
+  image: docker:latest
+  stage: publish
+  services:
+    - docker:dind
+  
+  before_script:
+    - apk add --no-cache groff less bash jq curl py-pip tzdata
+    - pip install awscli
+  script:
+    - $(aws ecr get-login --no-include-email --region us-east-2)
+    - docker build -t $REPOSITORY_URL:$CI_COMMIT_SHORT_SHA .
+    - docker push $REPOSITORY_URL:$CI_COMMIT_SHORT_SHA
+  only:
+    - development
+
+deploy_dev:
+  stage: deploy
+  image: registry.gitlab.com/gitlab-examples/kubernetes-deploy
+  environment:
+    name: Development
+  only:
+    kubernetes: active
+  script: 
+    - kubectl version
+  
+    - git clone https://54gene:$PASSWORD@gitlab.com/54genedevelopers/54gene-deployment.git kubernetes
+    - cd kubernetes
+
+    - git config --global user.email "tech@54gene.com"
+    - git config --global user.name "54gene"
+
+    - sed -i "s@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:[a-z0-9]*@486849952525.dkr.ecr.us-east-2.amazonaws.com/website:${CI_COMMIT_SHORT_SHA}@g" website/master/deployment.yaml
+    - kubectl apply -k website/master
+
+    - git add --all 
+    - git commit -m "Updated Website-Master images to $CI_COMMIT_SHORT_SHA"
+    - git push
+  only:
+    - development
+    
