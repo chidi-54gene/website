@@ -149,14 +149,14 @@ h1{
 }
 
 .events-card {
-    max-height: 500px;
-    min-height: 500px;
+  max-height: 400px;
+  min-height: 400px;
 }
 
 .event-p {
   margin: 15px 0px;
-    max-height: 80px;
-    min-height: 80px;
+    max-height: 100px;
+    min-height: 100px;
 }
 
 .mobile-break{
