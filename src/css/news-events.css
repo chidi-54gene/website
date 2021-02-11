@@ -27,8 +27,9 @@
 }
 
 .active-btn {
-  background: #ef5983 !important;
-  border: 1px solid #ef5983 !important;
+  background: #F1F2F7 !important;
+  border: 1px solid #F1F2F7 !important;
+  color: #4a557d !important;
 }
 
 #pagination-button {
