@@ -219,6 +219,7 @@
         <div class="col-md-8" style="padding-left: 5%; padding-right: 5%;">
 
           <div id="news-append"></div>
+          <div id="pagination-button"></div>
 
           <!-- <div class="pagination">
           <li id="prev" href="#">&laquo;</li>
@@ -245,7 +246,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
   <!-- <script src="./js/jquery.simplePagination.js"></script> -->
-  <script src="./js/pagination.js"></script>
+  <script src="./js/events.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function () {
@@ -253,7 +254,7 @@
         if ($('.pagination').find('.pageNumber .active')) {
           alert('found');
           let next = $('.pagination').find('.pageNumber .active').next();
-          console.log(next);
+
           next.addClass('active');
         }
         // 
@@ -317,72 +318,6 @@
   </script>
   <script>
     $("#footer-page").load("footer.html");
-  </script>
-
-  <script>
-    var content;
-    $.ajax({ //create an ajax request to display.php
-      type: "GET",
-      url: "https://api2.54gene.com/api/v1/events/all",
-      // dataType: "html",                
-      success: function (response) {
-        // $("#responsecontainer").html(response); 
-        // console.log(response.data);
-        $.each(response.data, function (index, events) {
-
-
-          var info;
-
-          if (events.additonal_info != null) {
-            info = events.additonal_info.substring(0, 50) + "...";
-          } else {
-            info = "";
-          }
-
-
-          content = `<div class="card mb-5 events-card" style="max-width: 900px; margin-top: 5%;">
-                                  <div class="row g-0">
-                                    <div class="col-md-3" style="padding: 0px;">
-                                      <img src="${events.image}" class="img-fluid event-image" alt="...">
-                                    </div>
-                                    <div class="col-md-9">
-                                      <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
-                                        <p class="event-p" style="font-size: 13px;"><b>${events.title}: </b> ${info}</p>
-                                        <div style="display: flex; margin-top: 0px;">
-                                          <div class="mt-3"><img src="images/time.svg" class="mr-2"></img>
-                                            <a style="font-size: 10px; margin-right: 10px;">${events.start_date} - ${events.end_date}</a></div><br class="mobile-break">
-                                          <div class="mt-3"><img src="images/location.svg" class="mr-2"></img><a
-                                              style="font-size: 10px;">${events.location}</a></div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>`;
-
-          $("#news-append").append(content);
-          console.log(content);
-
-        });
-
-        // var dataContainer = $('#news-append');
-        // dataContainer.pagination({
-        //     dataSource: content,
-        //     pageSize: 2,
-        //     showPrevious: false,
-        //     showNext: false,
-        //     showGoInput: true,
-        //     showGoButton: true,
-        //     callback: function(data, pagination) {
-        //         // template method of yourself
-                
-        //         var html = `<div>${data}</div>`;
-        //         dataContainer.html(html);
-        //     }
-        // })
-
-      }
-
-    });
   </script>
 </body>
 

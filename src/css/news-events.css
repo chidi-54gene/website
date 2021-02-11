@@ -12,7 +12,31 @@
 }
 
 .mobile-break{
-  display: none;
+  display: none !important;
+}
+
+.btn-info.page {
+  max-width: 55px;
+  min-width: 55px;
+  margin: 10px;
+  padding: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.active-btn {
+  background: #ef5983 !important;
+  border: 1px solid #ef5983 !important;
+}
+
+#pagination-button {
+  text-align: center;
+}
+
+.btn-info.page:first-child {
+  margin-left: 0px;
 }
 
 .event-image {
@@ -131,11 +155,11 @@ h1{
 
 .event-p {
   margin: 15px 0px;
-    max-height: 200px;
-    min-height: 200px;
+    max-height: 80px;
+    min-height: 80px;
 }
 
 .mobile-break{
-  display: block;
-}
+    display: inline-block !important;
+  }
 }
