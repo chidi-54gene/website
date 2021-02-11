@@ -1,12 +1,74 @@
-.typography-header-platform h1 {
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400,500;700&display=swap");
+
+.container-fluid {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  margin-top: 2rem;
+  color: #000;
+}
+
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  font-weight: 700;
+}
+
+.typography-header--platform {
+  background-image: url("../images/platform-header.svg");
+  background-position: right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 55px !important;
+}
+
+.typography-body--biobank {
+  background-color: #f4f6ff;
+  background-image: url("../images/platform-section.svg");
+  background-position: right;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  padding-top: 96px !important;
+  padding-bottom: 79px !important;
+}
+
+@media (min-width: 768px) {
+  .bio-line-container {
+    max-width: 742px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.typography-header--platform h1 {
+  margin-top: 64px;
   font-size: 2.25rem;
   /* 36px */
   line-height: 2.75rem;
   /* 44px */
+  color: #000;
 }
 
-.typography-header-platform {
-  background: #f4f6ff;
+.typography-header--platform .title-description {
+  margin-top: 30px !important;
+  font-weight: 400;
+  font-size: 1rem;
+  /* 16px */
+  line-height: 1.5625rem;
+  /* 25px */
+  color: #000;
+  text-align: start;
 }
 
 .fourth-light-header {
@@ -14,21 +76,22 @@
   font-weight: 200;
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .invertical {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  .typography-header-platform {
+  .typography-header--platform {
     background: right bottom / auto 100% no-repeat
         url("../images/about-us-header.svg"),
       #f4f6ff;
   }
+
   .platform-five {
     background: right bottom / auto 100% no-repeat
-        url("../images/about-us-header.svg"),
+        url("../images/platform-section-five.svg"),
       #fff;
   }
 
@@ -52,13 +115,14 @@
 }
 
 @media (min-width: 1400px) {
-  .typography-header-platform {
+  .typography-header--platform {
     padding-top: 5.125rem;
     /* 146px */
     padding-bottom: 3.875rem;
     /* 62px */
   }
 }
+
 .platform-div {
   padding: 0px;
 }
@@ -81,7 +145,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 30px 18px 21px;
+  padding: 0 42px 17px 21px;
   /* 25px */
   mix-blend-mode: normal;
   border-radius: 5px;
@@ -114,8 +178,15 @@
 }
 
 .platform-second-title {
-  font-weight: 700;
-  font-family: "Lora", serif;
+  font-size: 34px;
+  line-height: 44px;
+  color: #050608;
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.platform-section {
+  padding-top: 110px;
 }
 
 .platform-section__description {
@@ -125,18 +196,25 @@
   font-weight: 400;
   line-height: 25px;
   text-align: start;
-  margin-bottom: 3.125rem;
+  margin-bottom: 4.25rem;
   /* 50px */
 }
 
 .platform-third-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
   text-align: center;
   max-width: 800px;
   margin: auto;
+  color: #000;
+  margin-bottom: 101px;
 }
 
 .platform-fourth-title {
-  font-weight: 600; margin: auto; text-align: center;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
 }
 
 .platform-section {
@@ -145,61 +223,70 @@
   padding-bottom: 4.3125rem;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .platform-section {
-    background: right 143px top 30px / 32% auto no-repeat
+    background: right 143px top 28px / 27% auto no-repeat
       url("../images/Group\ 176.png");
-    padding-top: 8.875rem;
-    padding-bottom: 10.3125rem;
+    padding-top: 110px;
+    padding-bottom: 84px;
   }
 }
 
+.bio-line__description,
 .bio-paragraph {
-  font-weight: 300;
-  margin-top: 50px;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 29px;
+  color: #4a557d;
+  text-align: start;
 }
 
 .platform-four {
-  color: #050608;
-  padding-top: 1.875rem;
-  padding-bottom: 4.3125rem;
+  padding-top: 7.375rem;
+  padding-bottom: 3.625rem;
 }
 
 .platform-five {
-  color: #050608;
-  padding-top: 1.875rem;
-  padding-bottom: 4.3125rem;
+  padding-top: 6rem;
+  padding-bottom: 6.125rem;
 }
 
-.pfive{
-  font-weight: 200;
-  color: #4A557D;
-  text-align: center;
+.pfive {
+  font-weight: 400;
+  color: #4a557d;
+  text-align: start;
   margin: auto;
-  max-width: 700px;
-  line-height: 30px;
+  max-width: 741px;
+  font-size: 1rem;
+  line-height: 29px;
   margin-top: 30px;
 }
 
-.fifth-box{
-  background: linear-gradient(180deg, rgba(244, 246, 255, 0) 20.83%, #F4F6FF 100%);
+.fifth-box {
+  background: linear-gradient(
+    180deg,
+    rgba(244, 246, 255, 0) 20.83%,
+    #f4f6ff 100%
+  );
   padding: 5%;
   border-radius: 5px;
 }
 
 #over img {
-  margin-left: auto;
-  margin-right: auto;
   display: block;
 }
 
 .join-team-section {
-  background: url("../images/footer.png") no-repeat right,
-    #4a557d;
-  background-size: auto 100%;
-  padding-top: 3.75rem;
-  padding-bottom: 14.0625rem;
+  background: #4a557d;
+}
+
+@media (min-width: 1200px) {
+  .join-team-section {
+    background: url("../images/footer.png") no-repeat right, #4a557d;
+    background-size: auto 100%;
+    padding-top: 3.75rem;
+    padding-bottom: 14.0625rem;
+  }
 }
 
 .join-team-icon {
@@ -207,14 +294,21 @@
   margin-bottom: 3.375rem;
 }
 
-.join-team-highlight {
-  font-weight: 600;
-  font-size: 32px;
+.join-team__title {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 44px;
   color: #f1f2f7;
-  text-align: start;
-  margin: 0;
-  margin-top: 7.4375rem;
+  margin-bottom: 36px;
+}
+
+.join-team__description {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 44px;
+  color: #f1f2f7;
 }
 
 .btn--margin-top.btn--purple {
@@ -222,7 +316,7 @@
 }
 
 .btn--margin-top.btn--green {
-  margin-top: 3rem;
+  margin-top: 3.125rem;
 }
 
 .btn--green,
@@ -237,7 +331,6 @@
   border-radius: 3px;
 }
 
-
 .btn--green,
 .btn--green:hover {
   padding: 0.4375rem 2.1875rem;
@@ -245,12 +338,46 @@
   border: 1px solid #81c677;
 }
 
-@media(max-width: 1024px){
-  .join-team-highlight{
+@media (max-width: 1024px) {
+  .join-team-highlight {
     color: #81c677;
   }
 }
 
 .btn--margin-top.btn--green {
   margin-top: 3rem;
+}
+
+.research-card-icon {
+  min-height: 95px;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.research-card-icon__image {
+  display: block;
+  margin: auto;
+}
+
+.platform-four__title,
+.platform-four__description {
+  color: #000;
+}
+
+.platform-four__title {
+  font-size: 34px;
+  line-height: 45px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.platform-four__description {
+  font-size: 1rem;
+  line-height: 36px;
+  text-align: start;
+}
+
+.bio-line {
+  margin-top: 41px;
+  margin-bottom: 41px;
 }
