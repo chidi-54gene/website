@@ -100,7 +100,7 @@ var content;
                           <div class="col-md-9">
                             <div class="card-body" style="padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 5%;">
                               <p class="event-p" style="font-size: 13px;"><b>${events.title}: </b> ${info}</p>
-                              <div style="display: flex; margin-top: 0px;">
+                              <div class="event-loc-div" style="margin-top: 0px;">
                                 <div class="mt-3"><img src="images/time.svg" class="mr-2"></img>
                                   <a style="font-size: 10px; margin-right: 10px;">${events.start_date} - ${events.end_date}</a></div><br class="mobile-break">
                                   <div class="mt-3"><img src="images/location.svg" class="mr-2"></img><a

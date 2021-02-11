@@ -11,6 +11,10 @@
     #f4f6ff;
 }
 
+.event-loc-div{
+  display: flex;
+}
+
 .mobile-break{
   display: none !important;
 }
@@ -163,4 +167,10 @@ h1{
 .mobile-break{
     display: inline-block !important;
   }
+
+  .event-loc-div{
+    display: block;
+    line-height: 0px;
+  }
+  
 }
