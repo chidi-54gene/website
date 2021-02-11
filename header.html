@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel=“stylesheet”
+    href=“https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css”
+    crossorigin=“anonymous”> <link rel=“stylesheet”
+    href=“https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel=‘stylesheet’ type=‘text/css’ media=‘screen’ href=‘./css/main.css’>
+    <link rel=‘stylesheet’ type=‘text/css’ media=‘screen’
+    href=‘./css/typography.css’>
+  </head>
+  
+  <body>
+    <!-- Nav starts -->
+
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+      style="position: fixed; width: 100%; top: 0"
+    >
+    <div class="main-container">
+        
+    </div>
+      <a class="navbar-brand" href="./index.html">
+        <img
+          src="./assets/img/54gene-logo.svg"
+          class="img-responsive logo"
+          alt=""
+        />
+      </a>
+
+      <div class="hambclicker" onclick="toggleMenu()"></div>
+      <div
+        id="hambmenu"
+        class=""
+        onclick="toggleMenu()"
+        style="margin-bottom: 5%"
+      >
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="./about-us.html">About Us</a>
+          </li> -->
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About Us
+              <img
+                src="./assets/img/arrow-pink.svg"
+                class="img-responsive nav-arrow"
+                alt=""
+              />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./about-us.html">Who we are</a>
+              <a class="dropdown-item" href="./platform.html">Platform</a>
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./partnership.html">Partnerships</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+              <img
+                src="./assets/img/arrow-pink.svg"
+                class="img-responsive nav-arrow"
+                alt=""
+              />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./news-events.html">News and Events</a>
+              <a class="dropdown-item" href="https://blog.54gene.com">Blog</a>
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item pull-right">
+            <a
+              class="btn btn-default contact-us-btn float-right"
+              href="https://diagnosemeafrica.com/"
+              target="_blank"
+            >
+              Covid-19 testing
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Nav ends -->
+
+      <!-- Mobile Nav -->
+      <div id="sidebar" class="left-slidein-view">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a
+              class="nav-link"
+              href="https://diagnosemeafrica.com/"
+              target="_blank"
+            >
+              COVID-19 testing <span class="sr-only">(current)</span>
+            </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./about-us.html">About Us</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="./partnership.html">Partnerships</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Resources
+              <img
+                src="./assets/img/arrow-pink.svg"
+                class="img-responsive nav-arrow"
+                alt=""
+              />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./news-events.html">News and Events</a>
+              <a class="dropdown-item" href="https://blog.54gene.com">Blog</a>
+            </div>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile Nav ends -->
+
+    <div id="sidebar" class="left-slidein-view">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a
+            class="nav-link"
+            href="https://diagnosemeafrica.com/"
+            target="_blank"
+          >
+            COVID-19 testing <span class="sr-only">(current)</span>
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Services
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./partnership.html">Partnership</a>
+            </div>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact </a>
+        </li>
+
+
+      </ul>
+    </div>
+  <!-- Mobile Nav ends -->
+
+  <div id=" sidebar" class="left-slidein-view ">
+            <ul class="navbar-nav">
+
+
+              <li class="nav-item active">
+                <a class="nav-link" href="#">COVID-19 testing <span class="sr-only">(current)</span></a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./partnership.html">Partnerships</a>
+            </div>
+              </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="./about-us.html">About Us</a>
+        </li>
+
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Sectors
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Resources
+          </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./news-events.html">News and Events</a>
+              <a class="dropdown-item" href="https://blog.54gene.com">Blog</a>
+            </div>
+        </li>
+
+        <!-- <li class="nav-item pull-right">
+            <button class="btn btn-default contact-us-btn float-right">Contact</button>
+          </li> -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contact </a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+    <script>
+      function toggleMenu() {
+        var hambmenu = document.getElementById("hambmenu");
+        hambmenu.classList.toggle("isopen");
+        var leftSideBar = document.getElementById("sidebar");
+        document.getElementById("sidebar").style.display = "block";
+        leftSideBar.classList.toggle("isopen");
+      }
+    </script>
+  </body>
+</html>
