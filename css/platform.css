@@ -270,6 +270,7 @@ h6 strong {
   );
   padding: 5%;
   border-radius: 5px;
+  margin-left: -3px;
 }
 
 #over img {
@@ -381,3 +382,34 @@ h6 strong {
   margin-top: 41px;
   margin-bottom: 41px;
 }
+
+.yellow-box {
+  background:  #F5BF2F;;
+  border-radius: 2.8039px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  transform: rotate(64deg);
+}
+
+.red-box {
+  background: #F05F87;
+  border-radius: 2.8039px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  transform: rotate(64deg);
+}
+
+.green-box {
+  background: #81c677;
+  border-radius: 2.8039px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  transform: rotate(64deg);
+}
+
