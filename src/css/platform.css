@@ -208,15 +208,6 @@ h6 strong {
 }
 
 .platform-second-title {
-<<<<<<< HEAD:src/css/platform.css
-    color: #252939;
-    font-family: Lora;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 44px;
-    /* margin-top: 0px; */
-=======
   font-size: 34px;
   line-height: 44px;
   color: #050608;
@@ -226,7 +217,6 @@ h6 strong {
 
 .platform-section {
   padding-top: 110px;
->>>>>>> platforms:css/platform.css
 }
 
 .platform-section__description {
@@ -274,21 +264,11 @@ h6 strong {
 
 .bio-line__description,
 .bio-paragraph {
-<<<<<<< HEAD:src/css/platform.css
-  font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0em;
-    text-align: left;
-=======
   font-weight: 400;
   font-size: 16px;
   line-height: 29px;
   color: #4a557d;
   text-align: start;
->>>>>>> platforms:css/platform.css
 }
 
 .platform-four {
@@ -320,8 +300,7 @@ h6 strong {
   );
   padding: 5%;
   border-radius: 5px;
-  max-height: 200px;
-  min-height: 200px;
+  margin-left: -3px;
 }
 
 #over img {
@@ -433,3 +412,34 @@ h6 strong {
   margin-top: 41px;
   margin-bottom: 41px;
 }
+
+.yellow-box {
+  background:  #F5BF2F;;
+  border-radius: 2.8039px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  transform: rotate(64deg);
+}
+
+.red-box {
+  background: #F05F87;
+  border-radius: 2.8039px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  transform: rotate(64deg);
+}
+
+.green-box {
+  background: #81c677;
+  border-radius: 2.8039px;
+  width: 17px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  transform: rotate(64deg);
+}
+
